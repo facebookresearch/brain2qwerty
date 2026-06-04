@@ -1,0 +1,135 @@
+[project]
+name = "neuraltrain"
+version = "0.0.1"
+authors = [
+  { name="FAIR, AI at Meta" },
+]
+description = "A lightweight deep learning library for learning on M/EEG and other neuroimaging modalities."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "pandas>=2.0.1",
+  "numpy>=2.1",
+  "scikit-learn>=0.21.2",
+  "torch>=2.5.1",
+  "pytest>=7.4.0",
+  "pydantic>=2.5.0",
+  "torchmetrics>=1.1.2",
+  "braindecode@git+https://github.com/braindecode/braindecode@master",
+]
+
+[project.optional-dependencies]
+    models = [
+        "x_transformers>=1.27.20",
+        "green@git+https://github.com/Roche/neuro-green@main",
+    ]
+    lightning = [  # For use with pytorch-lightning and wandb
+        "lightning>=2.0.8",
+        "wandb>=0.15.11",
+    ]
+    dev = [
+        # Test
+        "pytest>=4.3.0",
+        "pytest-markdown-docs",
+        # Format
+        "black==24.3.0",
+        "isort==5.12.0",
+        "pre-commit>=1.15.2",
+        # Linters
+        "mypy>=0.971",
+        "pylint>=2.13.9",
+        "flake8",
+        # typing stubs
+        "pandas-stubs",
+        "types-PyYAML",
+        "types-Pillow",
+        "types-pywin32",
+        "types-requests",
+        "types-setuptools",
+        "types-tabulate",
+        "types-tqdm",
+    ]
+
+[tool.black]
+line-length = 90
+exclude = '''
+/(
+  | \.git
+  | \.mypy_cache
+  | __editable__
+)/
+'''
+force-exclude = '''
+/(
+   | scratch
+   | __editable__
+)/
+'''
+
+[project.urls]
+  Source = "https://github.com/facebookresearch/neuraltrain"
+  Tracker = "https://github.com/facebookresearch/neuraltrain/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]  # list of folders that contain the packages (["."] by default)
+include = ["neuraltrain*"]  # package names should match these glob patterns (["*"] by default)
+exclude = []  # exclude packages matching these glob patterns (empty by default)
+namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
+
+[tool.isort]
+known_first_party = ["neuralset", "neuraltrain"]
+profile = "black"
+line_length = 90
+skip_gitignore = true
+
+
+[tool.pylint]
+  [tool.pylint."MESSAGES CONTROL"]
+  # disabled messages
+  # * no-member has a lot of false positive, mypy does it better
+  disable = """
+      broad-except,
+      fixme,
+      invalid-name,
+      logging-fstring-interpolation,
+      missing-docstring,
+      no-else-return,
+      no-member,
+      protected-access,
+      too-few-public-methods,
+      too-many-locals,
+      too-many-statements,
+      too-many-return-statements,
+      too-many-branches,
+      useless-import-alias,
+      unspecified-encoding,
+      use-dict-literal,
+      useless-import-alias
+  """
+  [tool.pylint.DESIGN]
+  max-args = 6
+
+  [tool.pylint.FORMAT]
+  max-line-length = "140"
+
+  [tool.pylint.SIMILARITIES]
+  ignore-imports = "yes"
+
+
+[tool.mypy]
+  plugins = ['pydantic.mypy']
+  show_error_codes = true
+[[tool.mypy.overrides]]
+  module = ['pytest', 'setuptools', 'av', 'mne', 'torchvision', 'julius', 'spacy', 'spacy.cli', 'osfclient', 'botocore', 'botocore.*', 'boto3', 'wordfreq', 'transformers', 'pyunpack', 'moviepy', 'moviepy.*', 'torchvision.*', 'mne_bids', 'torchaudio', 'raft.*', 'cloudpickle', 'plotext', 'sklearn.*', 'scipy.*', 'torchmetrics', 'torchmetrics.*', 'braindecode', 'braindecode.*', 'lightning.pytorch.*', 'x_transformers', 'exca']
+  ignore_missing_imports = true
+
+
+[tool.pydantic-mypy]
+  init_forbid_extra = true
+  init_typed = true
+  warn_required_dynamic_aliases = true
