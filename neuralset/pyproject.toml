@@ -1,0 +1,145 @@
+[project]
+name = "neuralset"
+readme = "README.md"
+authors = [{name = "Meta FAIR"}]
+requires-python = ">=3.10"
+version = "0.0.1"
+
+dependencies = [
+  "pandas>=2.2.2",
+  "numpy>=2.1",
+  "pyarrow>=17.0.0",
+  "mne>=1.4.0",
+  "pybv>=0.7.6",
+  "mne_bids>=0.16",
+  "scikit-learn>=0.21.2",
+  "torch>=2.5.1",
+  "pytest>=7.4.0",
+  "nibabel>=5.1.0",
+  "tqdm>=4.65.0",
+  "exca>=0.4.5",
+]
+
+[project.urls]
+  Source = "https://github.com/facebookresearch/neuralset"
+  Tracker = "https://github.com/facebookresearch/neuralset/issues"
+
+[project.optional-dependencies]
+    dev = [
+        # Test
+        "pytest>=4.3.0",
+        "pytest-markdown-docs>=0.5.0",
+        # Format
+        "black==24.3.0",
+        "isort==5.12.0",
+        "pre-commit>=3.0.0",
+        # Linters
+        "mypy>=1.11.0",
+        "pylint>=2.13.9",
+        "flake8",
+        # typing stubs
+        "pandas-stubs",
+        "types-PyYAML",
+        "types-Pillow",
+        "types-pywin32",
+        "types-requests",
+        "types-setuptools",
+        "types-tabulate",
+        "types-tqdm",
+        # documentation
+        "sphinx>=7.4.7",
+        # "sphinx_rtd_theme>=2.0.0",
+        # "recommonmark>=0.7.1",
+        # "autodocsumm>=0.2.12",
+        "myst-parser>=3.0.1",
+    ]
+
+[tool.black]
+line-length = 90
+exclude = '''
+/(
+  | \.git
+  | \.mypy_cache
+  | __editable__
+)/
+'''
+force-exclude = '''
+/(
+   | scratch
+   | __editable__
+)/
+'''
+
+[tool.setuptools.packages.find]
+where = ["."]  # list of folders that contain the packages (["."] by default)
+include = ["neuralset*"]  # package names should match these glob patterns (["*"] by default)
+exclude = []  # exclude packages matching these glob patterns (empty by default)
+namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
+
+[tool.setuptools.package-data]
+# not sufficient in editable mode: https://github.com/python/mypy/issues/13392
+# still need to install with: pip install --config-settings editable_mode=strict -e .
+"neuralset" = ["py.typed", ".pyi", "**/data/huggingface-repos.txt"]
+
+[tool.isort]
+profile = "black"
+line_length = 90
+skip_gitignore = true
+
+[tool.pylint]
+  [tool.pylint."MESSAGES CONTROL"]
+  # disabled messages
+  # * no-member has a lot of false positive, mypy does it better
+  disable = """
+      broad-except,
+      fixme,
+      invalid-name,
+      logging-fstring-interpolation,
+      missing-docstring,
+      no-else-return,
+      no-member,
+      protected-access,
+      too-few-public-methods,
+      too-many-locals,
+      too-many-statements,
+      too-many-return-statements,
+      too-many-branches,
+      useless-import-alias,
+      unspecified-encoding,
+      use-dict-literal,
+      useless-import-alias,
+      import-outside-toplevel
+  """
+  [tool.pylint.DESIGN]
+  max-args = 6
+
+  [tool.pylint.FORMAT]
+  max-line-length = "140"
+
+  [tool.pylint.SIMILARITIES]
+  ignore-imports = "yes"
+
+
+[tool.mypy]
+  plugins = ['pydantic.mypy']
+  show_error_codes = true
+[[tool.mypy.overrides]]
+  # we bluntly override the input type for _get in the features
+  module = ['neuralset.features.*']
+  disable_error_code = ['override']
+[[tool.mypy.overrides]]
+  module = ['pytest', 'setuptools', 'av', 'mne', 'mne.io', 'torchvision',
+  'julius', 'spacy', 'spacy.cli', 'osfclient', 'botocore', 'botocore.*', 'boto3',
+  'wordfreq', 'transformers', 'pyunpack', 'moviepy', 'moviepy.*', 'torchvision.*',
+  'mne_bids', 'torchaudio', 'raft.*', 'cloudpickle', 'plotext', 'sklearn.*',
+  'scipy.*', 'skimage.*', 'nilearn.*',  'moabb', 'moabb.*', 'h5py', 'bids',
+  'nltk_contrib.textgrid', 'timm', 'openneuro', 'textgrids', 'bs4', 'mne_nirs',
+  'soundfile', 'matplotlib.*', 'mne.datasets', 'exca', 'pyarrow', 'pybv',
+  'mne.io.brainvision', 'cv2', 'huggingface_hub']
+  ignore_missing_imports = true
+
+
+[tool.pydantic-mypy]
+  init_forbid_extra = true
+  init_typed = true
+  warn_required_dynamic_aliases = true
