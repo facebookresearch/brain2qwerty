@@ -46,7 +46,7 @@ dependencies = [
     "torchmetrics==1.7.3",
     "x-transformers==2.4.9",
     # V2 LLM stack
-    "transformers==4.52.4",
+    "transformers==5.0.0rc3",
     "peft==0.18.1",
     # Scientific / data
     "numpy==2.2.6",
