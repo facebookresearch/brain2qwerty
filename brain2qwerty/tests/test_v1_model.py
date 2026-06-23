@@ -7,9 +7,9 @@
 import copy
 
 import torch
+
 from brain2qwerty_v1.config.model_config import ENCODER, TRANSFORMER
 from brain2qwerty_v1.metrics import CER
-
 from neuraltrain.losses.base import CrossEntropyLoss
 from neuraltrain.models.base import BaseModelConfig
 

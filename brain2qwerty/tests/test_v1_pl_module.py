@@ -8,10 +8,10 @@ import copy
 from types import SimpleNamespace
 
 import torch
+
 from brain2qwerty_v1.config.model_config import ENCODER, TRANSFORMER
 from brain2qwerty_v1.metrics import CER
 from brain2qwerty_v1.pl_module import BrainModule
-
 from neuraltrain.models.base import BaseModelConfig
 from neuraltrain.optimizers import LightningOptimizer
 

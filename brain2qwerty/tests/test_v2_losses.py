@@ -7,6 +7,7 @@
 """Fast (synthetic, CPU) tests for the V2 losses and CTC decoding."""
 
 import torch
+
 from brain2qwerty_v2.losses import CtcLoss, WordContrastiveLoss
 from brain2qwerty_v2.utils import (
     ctc_greedy_decode,

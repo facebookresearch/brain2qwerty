@@ -8,12 +8,12 @@
 
 import copy
 
-import brain2qwerty_v2.models  # noqa: F401  (registers the ConvConformer encoder)
 import torch
+
+import brain2qwerty_v2.models  # noqa: F401  (registers the ConvConformer encoder)
 from brain2qwerty_v2.config.model_config import ENCODER
 from brain2qwerty_v2.ctc_segmenter import CTCSpaceSegmenter, build_intra_word_pooler
 from brain2qwerty_v2.utils import ctc_greedy_decode
-
 from neuraltrain.models.base import BaseModelConfig
 
 N_CH = 306

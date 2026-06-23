@@ -104,5 +104,11 @@ ignore = ["E501"]
 [tool.ruff.lint.isort]
 known-first-party = ["brain2qwerty_v1", "brain2qwerty_v2", "studies", "neuralset", "neuraltrain", "neuralfetch"]
 
+# Keep the pre-commit isort hook consistent with ruff's import sorting.
+[tool.isort]
+profile = "black"
+line_length = 90
+known_first_party = ["brain2qwerty_v1", "brain2qwerty_v2", "studies", "neuralset", "neuraltrain", "neuralfetch"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -14,12 +14,11 @@ Run explicitly:
 
 import sys
 
+import neuralset as ns
 import studies  # noqa: F401  (registers Pinet2024Meg)
 from brain2qwerty_v1.transforms import Brain2QwertyV1Splitter, SpanishBCBLPreprocessing
 from brain2qwerty_v1.utils import BUTTON_MAPPING, ChannelPositions2D
 from studies.spanishbcbl import Pinet2024Meg
-
-import neuralset as ns
 
 
 def main(path: str) -> None:

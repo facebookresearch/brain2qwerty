@@ -128,7 +128,6 @@ def _mat2df(struct: np.ndarray) -> pd.DataFrame:
     keys = list(struct.dtype.fields.keys())
     out: tp.List[dict] = list()
     try:
-        n_struct = len(struct)
         for t in struct:
             out.append(dict())
 
@@ -143,7 +142,7 @@ def _clean_accents(stim: str) -> str:
     """clean accents from a string
     á, é, í, ó, ú, ü, ñ -> a, e, i, o, u, u, n
     """
-    if type(stim) == str:
+    if isinstance(stim, str):
         stim = stim.lower()
 
         stim = stim.replace("á", "a")
@@ -226,13 +225,13 @@ class _Pinet2024(study.Study):
         str
     ] = """MEG/EEG recordings collected during a keyboard typing task.
     Experiment description:
-    - Experiments are organisised by subject, sessions, and blocks. Each subject has two sessions, each session has three tasks, two blocks of which are typing tasks (block1, block2) and one is tapping task 
-    - Each trial of each block consists of two phases: 
-        - perception (is_image==True), where words of each sentence are shown as RSVP 
-        - production (is_image==False), where participants type the sentence they keep in memory 
+    - Experiments are organisised by subject, sessions, and blocks. Each subject has two sessions, each session has three tasks, two blocks of which are typing tasks (block1, block2) and one is tapping task
+    - Each trial of each block consists of two phases:
+        - perception (is_image==True), where words of each sentence are shown as RSVP
+        - production (is_image==False), where participants type the sentence they keep in memory
     - The first two trials of each block are training trials, where participants typed with visual feedback. The rest are test trials (typing with no visual feedback on screen)
-    - There are 128 unique test sentences. Train trial sentences do not overlap with test trial sentences. 
-    - Max sentence length is 8 words. 
+    - There are 128 unique test sentences. Train trial sentences do not overlap with test trial sentences.
+    - Max sentence length is 8 words.
     Usage:
     - Pinet2024Meg for MEG data, Pinet2024Eeg for EEG data
     - In MEG data, recordings from certain different subject numbers belong to the same person. Refer
@@ -690,7 +689,7 @@ class _Pinet2024(study.Study):
             [
                 pd.DataFrame(typed_words),
                 buttons,
-                meta[meta["is_percep"] == True],
+                meta[meta["is_percep"]],
             ],
             ignore_index=True,
         ).reset_index(drop=True)
