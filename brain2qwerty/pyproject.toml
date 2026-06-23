@@ -39,7 +39,7 @@ dependencies = [
     "exca==0.5.22",
     "submitit==1.5.3",
     # Deep learning core
-    "torch==2.6.0",
+    "torch==2.12.1",
     "torchaudio==2.6.0",
     "torchvision==0.21.0",
     "lightning==2.5.2",
