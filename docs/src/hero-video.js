@@ -414,13 +414,48 @@ async function boot() {
     console.error('hero-video: could not load manifest', e);
   }
 
-  // Hide the loader once the scrubbed clip has a first frame.
-  const hideLoader = () => { if (loadingEl) loadingEl.style.display = 'none'; };
+  // Hide the loader once the scrubbed clip can paint a frame. Mobile browsers can
+  // be stingy about firing `loadeddata` for a video that is never play()ed, so we
+  // also listen to `loadedmetadata` / `canplay` and keep a safety timeout.
+  let loaderHidden = false;
+  const hideLoader = () => {
+    if (loaderHidden) return;
+    loaderHidden = true;
+    if (loadingEl) loadingEl.style.display = 'none';
+  };
   if (zoomVideo.readyState >= 2) hideLoader();
-  else zoomVideo.addEventListener('loadeddata', hideLoader, { once: true });
+  for (const ev of ['loadedmetadata', 'loadeddata', 'canplay']) {
+    zoomVideo.addEventListener(ev, hideLoader, { once: true });
+  }
+  setTimeout(hideLoader, 4000);
   zoomVideo.addEventListener('error', () => {
     if (loadingEl) loadingEl.textContent = 'Could not load the hero video.';
   }, { once: true });
+
+  // The zoom clip is never play()ed -- it is scrubbed frame-by-frame via
+  // currentTime on scroll. TOUCH browsers (Android Chrome / iOS Safari) refuse to
+  // decode + paint a paused, seek-only <video> until it has actually played once,
+  // so the scanner stayed blank/black while scrolling. Prime it with a one-shot
+  // muted play() -> pause() on the first touch, then snap back to the scroll
+  // position. We restore currentTime so the brief play never leaves a stale
+  // frame, and we DON'T do this on desktop (mouse), where seek-only scrubbing
+  // already works -- a stray play() there would fight the scroll seeking.
+  let zoomPrimed = false;
+  function primeZoom() {
+    if (zoomPrimed) return;
+    zoomPrimed = true;
+    const at = zoomVideo.currentTime;
+    const settle = () => {
+      try { zoomVideo.pause(); } catch {}
+      try { zoomVideo.currentTime = at; } catch {}
+      lastSeek = -1;            // force the render loop to re-seek to the scroll pos
+    };
+    let p;
+    try { p = zoomVideo.play(); } catch { zoomPrimed = false; return; }
+    if (p && typeof p.then === 'function') p.then(settle).catch(() => { zoomPrimed = false; });
+    else settle();
+  }
+  window.addEventListener('touchstart', primeZoom, { passive: true, once: true });
 
   // The activity loop runs on its own clock (unless reduced motion).
   if (!prefersReducedMotion) {
