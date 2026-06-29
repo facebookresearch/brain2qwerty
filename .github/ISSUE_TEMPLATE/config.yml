@@ -1,0 +1,11 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+# All rights reserved.
+#
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and discussion
+    url: https://github.com/facebookresearch/brain2qwerty/discussions
+    about: Please use Discussions for questions, ideas and "how do I...?" threads.

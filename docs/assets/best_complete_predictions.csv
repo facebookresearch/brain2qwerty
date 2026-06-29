@@ -1,0 +1,844 @@
+subject,true_text,llm_pred,llm_cer,llm_wer
+S07,a cleaning service will come to my house tomorrow,a feeling of sorrow will come to my soul tomorrow,0.3061,0.4444
+S09,a cleaning service will come to my house tomorrow,a neighbor will come to play house tomorrow,0.3061,0.3333
+S08,a cleaning service will come to my house tomorrow,a salesman will visit my house tomorrow,0.4082,0.4444
+S07,a person without experience will not get hired easily,a person with our experience will not get hired easily,0.0377,0.2222
+S09,a person without experience will not get hired easily,a person with no experience will not get hired easily,0.0566,0.2222
+S08,a person without experience will not get hired easily,people with no experience will not get hired easily,0.1698,0.3333
+S07,a river flowing through the valley is home to many fish,a river flowing through the valley shines brightly,0.2909,0.4545
+S09,a river flowing through the valley is home to many fish,the river flows through the valley,0.4909,0.6364
+S08,a river flowing through the valley is home to many fish,the river flows through the valley,0.4909,0.6364
+S07,am i eating the food that you recommended for stress,am i eating the food that you recommended,0.2115,0.2
+S09,am i eating the food that you recommended for stress,arm muscles are eating the food for strength,0.6731,0.7
+S08,am i eating the food that you recommended for stress,am i getting the shoes that you recommended for stress relief,0.25,0.3
+S07,am i not boring you,am i not singing you,0.2105,0.2
+S09,am i not boring you,am i not smiling at you,0.3684,0.4
+S08,am i not boring you,am i not ringing you,0.2105,0.2
+S07,am i not supposed to love my family members,are the siblings going to live with their family members,0.6744,0.7778
+S09,am i not supposed to love my family members,am i not closed to love my family members,0.093,0.1111
+S08,am i not supposed to love my family members,am i not supposed to have any family members,0.093,0.2222
+S07,are the bees around the flowers collecting nectar,are the bees around the flowers not collecting pollen,0.2041,0.25
+S09,are the bees around the flowers collecting nectar,are the bees pollinating the flowers,0.5714,0.375
+S08,are the bees around the flowers collecting nectar,are the flowers around the flower collector blooming,0.3469,0.5
+S07,are the birds above the lake flying high now,are the birds above the trees flying high now,0.0909,0.1111
+S09,are the birds above the lake flying high now,are the birds of young birds flying high now,0.3182,0.3333
+S08,are the birds above the lake flying high now,are the birds flying over the mountains,0.5455,0.6667
+S07,are the computers that they use not working properly,are the computers that they have got working properly,0.0769,0.2222
+S09,are the computers that they use not working properly,are the computers they use not working properly now,0.1731,0.2222
+S08,are the computers that they use not working properly,are the computers in the lab not working properly,0.1538,0.3333
+S07,are the flowers in our garden not blooming yet,are the flowers in our garden not blooming yet,0,0
+S09,are the flowers in our garden not blooming yet,are the flowers in our garden not blooming yet,0,0
+S08,are the flowers in our garden not blooming yet,are the flowers in our garden not blooming yet,0,0
+S07,are the golfers who are not accurate not going to miss,are the doctors who are not accurate going to make mistakes,0.3148,0.3636
+S09,are the golfers who are not accurate not going to miss,are the historians who are not accurate not going to be trusted,0.3148,0.2727
+S08,are the golfers who are not accurate not going to miss,are the programmers not accurate in their code,0.4815,0.6364
+S07,are the houses on this street going to be renovated soon,are the houses on this street going to be renovated soon,0,0
+S09,are the houses on this street going to be renovated soon,are the houses on this street going to be sold soon,0.125,0.0909
+S08,are the houses on this street going to be renovated soon,are the houses on this street going to be renovated soon,0,0
+S07,are the kids scared of the dark room upstairs,are the kids cared for in the daycare room,0.4222,0.5556
+S09,are the kids scared of the dark room upstairs,are the kids scared of the dark,0.3111,0.2222
+S08,are the kids scared of the dark room upstairs,are the kids afraid of the dark room,0.3111,0.2222
+S07,are the managers going to hire more staff in future,are the managers going to promote stage in cultures,0.1961,0.4
+S09,are the managers going to hire more staff in future,are the managers going to relax on the beach,0.4118,0.5
+S08,are the managers going to hire more staff in future,are the managers going to hire more staff in the future,0.0784,0.1
+S07,are the managers not happy with the new policy,are the customers not happy with the new policy,0.1304,0.1111
+S09,are the managers not happy with the new policy,are the managers not happy with the new policy,0,0
+S08,are the managers not happy with the new policy,were the managers not happy with the new policy,0.0435,0.1111
+S07,are the people around us not feeling calm,are the people around us not feeling calm,0,0
+S09,are the people around us not feeling calm,are the people around us not feeling calm,0,0
+S08,are the people around us not feeling calm,are the people around us not feeling anxious,0.1707,0.125
+S07,are the people around you feeling anxious about their health,are the people around you feeling anxious but their health,0.0333,0.1
+S09,are the people around you feeling anxious about their health,are the people around you feeling anxious about their exams,0.0833,0.1
+S08,are the people around you feeling anxious about their health,are the people around you not feeling anxious about the health,0.1,0.2
+S07,are the people who exercise daily less prone to depression,are the people who exercise daily less prone to depression,0,0
+S09,are the people who exercise daily less prone to depression,are the people who exercise daily less likely to be depressed,0.2069,0.3
+S08,are the people who exercise daily less prone to depression,are the people who exercise daily less prone to depression,0,0
+S07,are the planes taking off on schedule today,are the students taking notes in class today,0.4186,0.5
+S09,are the planes taking off on schedule today,are the flights taking off on schedule today,0.1163,0.125
+S08,are the planes taking off on schedule today,are the people eating breakfast on the beach today,0.5349,0.625
+S07,are the players who are warming up going to start the game,are the players who are warming up going to start the game,0,0
+S09,are the players who are warming up going to start the game,are the players who are eating going to start the game,0.1034,0.1667
+S08,are the players who are warming up going to start the game,are the players that are warming up going to start the game,0.0517,0.0833
+S07,are the rooms that they paint not very colorful,are the rooms that they painted not very colorful,0.0426,0.1111
+S09,are the rooms that they paint not very colorful,are the rooms that they painted not very colorful,0.0426,0.1111
+S08,are the rooms that they paint not very colorful,are the rooms that they painted not very colorful,0.0426,0.1111
+S07,are the salads at this restaurant very big,are the dishes at this restaurant very big,0.119,0.125
+S09,are the salads at this restaurant very big,are the servers at this restaurant very friendly,0.2857,0.25
+S08,are the salads at this restaurant very big,are the prices at this restaurant very high,0.1667,0.25
+S07,are the sisters of those boys going to the party tonight,are the sisters or those boys going to the city tonight,0.0714,0.1818
+S09,are the sisters of those boys going to the party tonight,are the neighbors going to the party tonight,0.2857,0.3636
+S08,are the sisters of those boys going to the party tonight,are the neighbors on this street going to the party tonight,0.2679,0.3636
+S07,are the students in this school friendly,are the students in this school very friendly,0.125,0.1429
+S09,are the students in this school friendly,are the students in the school friendly,0.05,0.1429
+S08,are the students in this school friendly,are the students in this school friendly,0,0
+S07,are the taxis going to be on strike next week,are the teachers going to be on strike next week,0.1111,0.1
+S09,are the taxis going to be on strike next week,are the taxis going to be on strike next week,0,0
+S08,are the taxis going to be on strike next week,are the taxis going to be on strike next week,0,0
+S07,are the trees along the river very old now,are the trees along the river very old now,0,0
+S09,are the trees along the river very old now,are the trees along the river very old now,0,0
+S08,are the trees along the river very old now,are the trees along the river very old,0.0952,0.1111
+S07,are the women in your family taking care of their health,are the women in your family taking care of their health,0,0
+S09,are the women in your family taking care of their health,are the women in your family taking care of their health,0,0
+S08,are the women in your family taking care of their health,are the women in your family taking care of their health,0,0
+S07,are they happy when they are with their friends or family,are they happy when they are with their friends or family,0,0
+S09,are they happy when they are with their friends or family,were they happy when they were with their friends or family,0.0702,0.1818
+S08,are they happy when they are with their friends or family,are they happy when they are with their friends and family,0.0526,0.0909
+S07,are you standing next to a tall palm tree,are you standing next to your sister next week,0.4146,0.4444
+S09,are you standing next to a tall palm tree,are you standing next to the door,0.3171,0.4444
+S08,are you standing next to a tall palm tree,are you sitting next to the old tree,0.2927,0.4444
+S07,brothers and sisters often share their toys,brothers and sisters often have disagreements,0.3023,0.4286
+S09,brothers and sisters often share their toys,will the sisters sit together often,0.6047,0.8571
+S08,brothers and sisters often share their toys,can others play with their toys,0.5581,0.7143
+S07,can gymnasts perform difficult routines easily,can musicians perform discount routines easily,0.2826,0.3333
+S09,can gymnasts perform difficult routines easily,can surgeons perform operations without mistakes easily,0.587,0.6667
+S08,can gymnasts perform difficult routines easily,pianists perform beautifully during concerts,0.6304,0.8333
+S07,can hackers access systems or create new viruses easily,are architects able to create new designs easily,0.5091,0.6667
+S09,can hackers access systems or create new viruses easily,can artists create new paintings easily,0.4909,0.5556
+S08,can hackers access systems or create new viruses easily,can mechanics add custom parts for cars easily,0.5636,0.7778
+S07,can i join you because i love this game,can i move you because i live nearby,0.3333,0.4444
+S09,can i join you because i love this game,do i play because i love this game,0.2564,0.3333
+S08,can i join you because i love this game,can i join you because i love this game,0,0
+S07,can i take a bike that has a flat tire,can she ride a bike at school,0.5526,0.7
+S09,can i take a bike that has a flat tire,can i take a ride that is a bike,0.2895,0.4
+S08,can i take a bike that has a flat tire,can take a bike that has a flat tire,0.0526,0.1
+S07,can the plants that grow in the shade survive without sunlight,can the plants in the garden grow without sunlight,0.3226,0.3636
+S09,can the plants that grow in the shade survive without sunlight,were the plants that did not grow in the sunlight,0.4516,0.5455
+S08,can the plants that grow in the shade survive without sunlight,can the plants that grow in the shade curve in the contrast,0.2419,0.3636
+S07,can the student pass the exam without studying,did the student pass the exam without studying,0.0652,0.125
+S09,can the student pass the exam without studying,can the students pass the exam without studying,0.0217,0.125
+S08,can the student pass the exam without studying,can the student pass the exam without studying,0,0
+S07,can the swimmer who broke the record swim faster now,can the swimmer who broke the record swim again,0.1538,0.2
+S09,can the swimmer who broke the record swim faster now,can the swimmer who broke the record swim faster,0.0769,0.1
+S08,can the swimmer who broke the record swim faster now,can the winner who broke the record win again,0.25,0.4
+S07,can you see the stars when the sky is clear,can you see the stars when the boy sleeps,0.186,0.3
+S09,can you see the stars when the sky is clear,do you see the stats when the athlete breaks a record,0.5116,0.6
+S08,can you see the stars when the sky is clear,can you see the stars when the sky is clear,0,0
+S07,can you smell what i am cooking,can you sell this computer,0.4516,0.7143
+S09,can you smell what i am cooking,can you sell that book,0.3548,0.7143
+S08,can you smell what i am cooking,can you smell perfume in this room,0.5484,0.5714
+S07,can you teach me how to paint,can you teach me how to paint,0,0
+S09,can you teach me how to paint,can you teach me how to knit,0.1034,0.1429
+S08,can you teach me how to paint,can you teach me how to paint,0,0
+S07,cars are not allowed on this road,cars are not allowed in this road,0.0303,0.1429
+S09,cars are not allowed on this road,cars are not moving fast in the road,0.4242,0.5714
+S08,cars are not allowed on this road,tats are not allowed on the road,0.1212,0.2857
+S07,cars with electric engines are becoming more popular,are cars with electric engines becoming popular,0.25,0.375
+S09,cars with electric engines are becoming more popular,anrs with epilepsy are becoming more popular,0.2885,0.375
+S08,cars with electric engines are becoming more popular,cars with electric engines are becoming more popular,0,0
+S07,did he have to wait in line to pay,did he have to wait in line to pay,0,0
+S09,did he have to wait in line to pay,did he have to wait in line to pay,0,0
+S08,did he have to wait in line to pay,did he have to wait in line to pay,0,0
+S07,did it snow a lot in january,did it cost a lot of money,0.3929,0.4286
+S09,did it snow a lot in january,did he have a happy childhood,0.75,0.7143
+S08,did it snow a lot in january,she eats lunch not in the morning,0.8214,1
+S07,did she buy the shoes on sale yesterday,did she buy the shoes on sale yesterday,0,0
+S09,did she buy the shoes on sale yesterday,did she buy the chopping board yesterday,0.2564,0.375
+S08,did she buy the shoes on sale yesterday,she bought the shoes on sale yesterday,0.2051,0.25
+S07,did she take a bus to work every day,did she take a bus to work each day,0.1111,0.1111
+S09,did she take a bus to work every day,i will take a bus to work every day,0.1667,0.2222
+S08,did she take a bus to work every day,did she take a bus to work every morning,0.1944,0.1111
+S07,did the athlete break a record or just come close,did the athlete break a record or yet,0.2857,0.3
+S09,did the athlete break a record or just come close,did the athlete break a record not long ago,0.2653,0.4
+S08,did the athlete break a record or just come close,do the women there create a recipe for dessert,0.6122,0.9
+S07,did the chef cook the steak for thirty minutes,did the chef cook the steak for three months,0.1304,0.2222
+S09,did the chef cook the steak for thirty minutes,a fish eats the plankton for every minute,0.5652,0.7778
+S08,did the chef cook the steak for thirty minutes,did the chef cook the steak for thirty minutes,0,0
+S07,did the cold winds from the north bring snow yesterday,did the child who was born in the hospital show up yesterday,0.5,0.8
+S09,did the cold winds from the north bring snow yesterday,did the guests from the party bring gifts yesterday,0.3148,0.4
+S08,did the cold winds from the north bring snow yesterday,did the cold wind from the north bring snow yesterday,0.0185,0.1
+S07,did the friends go to the movies because they loved the actor,did the friends get to the movie because they moved the actor,0.0656,0.25
+S09,did the friends go to the movies because they loved the actor,did the girls go to the movie because they loved the actor,0.0984,0.1667
+S08,did the friends go to the movies because they loved the actor,did the friends go to the movie because they liked the actor,0.0492,0.1667
+S07,did the kids who used to live here not like their parents,did the kid who used to live here not like their parents,0.0175,0.0833
+S09,did the kids who used to live here not like their parents,did the kids who used to play together not like their parents,0.1579,0.1667
+S08,did the kids who used to live here not like their parents,did the neighbors used to live late at night,0.4912,0.5833
+S07,did the programmers who worked on it use java,did the programmers who wrote the code have access,0.4444,0.5556
+S09,did the programmers who worked on it use java,did the programmers who worked on it have experience,0.2889,0.2222
+S08,did the programmers who worked on it use java,did the programmer have a bug in it,0.4667,0.7778
+S07,did the sailors navigate through the storm but get tired,did the tourists have a great time through the streets,0.5714,0.8
+S09,did the sailors navigate through the storm but get tired,did the babies cry in the car but get tired,0.4286,0.4
+S08,did the sailors navigate through the storm but get tired,did the sailors navigate through the storms but stayed tired,0.1071,0.2
+S07,did the store have a sale on winter clothes then,did the store have a sale in winter,0.2917,0.3
+S09,did the store have a sale on winter clothes then,did the store have a sale in winter,0.2917,0.3
+S08,did the store have a sale on winter clothes then,did the store have fresh vegetables in stock,0.5,0.6
+S07,did the teachers not explain it well or clearly,did the teachers not explain it clearly,0.1702,0.2222
+S09,did the teachers not explain it well or clearly,did the teachers not prepare it well,0.3617,0.3333
+S08,did the teachers not explain it well or clearly,did the teachers not explain it well,0.234,0.2222
+S07,did the teenagers at school have good eating habits before,did the teachers in the school have good eating habits before,0.1552,0.3
+S09,did the teenagers at school have good eating habits before,do the teachers at school have healthy eating habits before,0.2241,0.3
+S08,did the teenagers at school have good eating habits before,did the teachers at school have good eating habits before,0.069,0.1
+S07,did the writer win an award for her book,did the writer find a publisher for her book,0.3,0.3333
+S09,did the writer win an award for her book,did the writer win an award for her book,0,0
+S08,did the writer win an award for her book,was the writer finding inspiration for her book,0.425,0.4444
+S07,did they go to therapy because they had anxiety issues,did they go to therapy because they had anxiety,0.1296,0.1
+S09,did they go to therapy because they had anxiety issues,did they start therapy because they have mental health issues,0.3148,0.5
+S08,did they go to therapy because they had anxiety issues,did they go to therapy because they had anxiety,0.1296,0.1
+S07,did they have trouble sleeping last night,did they have trouble sleeping last night,0,0
+S09,did they have trouble sleeping last night,did they have trouble sleeping at night,0.0488,0.1429
+S08,did they have trouble sleeping last night,do they have trouble sleeping at night,0.0976,0.2857
+S07,did they not have enough money to buy what they wanted,did you not have enough money to buy the shoes,0.2778,0.3636
+S09,did they not have enough money to buy what they wanted,did they not have enough money yet,0.3704,0.4545
+S08,did they not have enough money to buy what they wanted,did they have enough money to fly away,0.3519,0.4545
+S07,different cultures have unique traditions and customs to follow,different cultures have unique traditions and customs,0.1587,0.2222
+S09,different cultures have unique traditions and customs to follow,our culture has unique traditions and customs,0.3333,0.5556
+S08,different cultures have unique traditions and customs to follow,different cultures have unique customs and traditions,0.3333,0.4444
+S07,do brothers and sisters always fight when they are young,do brothers and sisters always fight when they are young,0,0
+S09,do brothers and sisters always fight when they are young,weather is clear on most days when they are sunny,0.5536,0.7
+S08,do brothers and sisters always fight when they are young,do brothers and sisters always fight when they are young,0,0
+S07,do i seem upset to you,do i need help from you,0.4545,0.5
+S09,do i seem upset to you,do you trust me,0.6818,0.8333
+S08,do i seem upset to you,do i need to apologize to you now,0.7727,0.6667
+S07,do plants grow well in areas where rivers often flood,do plants grow well in areas near rivers often flow,0.1132,0.2
+S09,do plants grow well in areas where rivers often flood,soe plants grow where there are rivers,0.4906,0.7
+S08,do plants grow well in areas where rivers often flood,do the athletes not win in a race,0.7547,0.9
+S07,do the dancers who perform in this show practice daily,do the dancers who perform in this show practice daily,0,0
+S09,do the dancers who perform in this show practice daily,do the dancers who perform in this show practice daily,0,0
+S08,do the dancers who perform in this show practice daily,do the dancers who perform this choreography practice daily,0.2407,0.2
+S07,do the instruments in the orchestra sound beautiful together,do the instruments in the orchestra play beautifully together,0.1167,0.2222
+S09,do the instruments in the orchestra sound beautiful together,can the instruments in the orchestra play beautiful music together,0.2333,0.3333
+S08,do the instruments in the orchestra sound beautiful together,do the mountains in the distance look beautiful,0.5167,0.4444
+S07,do the men in your family have any sisters,do the men in your family have a lot of sisters,0.1667,0.3333
+S09,do the men in your family have any sisters,does the men in your family have a sister,0.119,0.3333
+S08,do the men in your family have any sisters,do the men in your family have sisters,0.0952,0.1111
+S07,do the musicians playing in the band not know that song,do the musicians playing in the band not like that,0.1636,0.1818
+S09,do the musicians playing in the band not know that song,do the musicians playing in the band not know that song,0,0
+S08,do the musicians playing in the band not know that song,do the musicians in that band not play instruments,0.4182,0.4545
+S07,do the people sitting next to us not speak english,do the people sitting next to us not seem nervous,0.18,0.2
+S09,do the people sitting next to us not speak english,do the people sitting next to us not sleep,0.2,0.2
+S08,do the people sitting next to us not speak english,do the people sitting next to you have enemies,0.28,0.4
+S07,do the people who ride motorcycles wear helmets,do the people who watch documentaries learn something,0.5106,0.5
+S09,do the people who ride motorcycles wear helmets,do the people who rode motorcycles wear helmets,0.0213,0.125
+S08,do the people who ride motorcycles wear helmets,do the people who ride bicycles wear helmets,0.1064,0.125
+S07,do the schools that have more resources offer better education,do the schools that have more resources offer better education,0,0
+S09,do the schools that have more resources offer better education,are the schools who have more resources offering better education,0.1452,0.3
+S08,do the schools that have more resources offer better education,do the schools that have more resources provide better education,0.0968,0.1
+S07,do the students without books not get worried about homework,do the students who are stressed not get a break about homework,0.3167,0.5
+S09,do the students without books not get worried about homework,do the students without books study without homework,0.2333,0.4
+S08,do the students without books not get worried about homework,do the students without parents look not get home work,0.3833,0.5
+S07,do they feel excited when they are going on vacation or not,do they feel excited because they are going on vacation,0.2373,0.25
+S09,do they feel excited when they are going on vacation or not,do you feel excited when you are on vacation or not,0.2373,0.25
+S08,do they feel excited when they are going on vacation or not,do they feel excited when they are going shopping,0.2712,0.3333
+S07,do your friends like coffee or do they prefer tea,do your friends like coffee or tea,0.3061,0.3
+S09,do your friends like coffee or do they prefer tea,do your friends like coffee or tea,0.3061,0.3
+S08,do your friends like coffee or do they prefer tea,do you not like vegetables so they never taste good,0.5918,0.8
+S07,does he enjoy his work life,does he like this line,0.4444,0.6667
+S09,does he enjoy his work life,does he have a happy home life,0.4815,0.6667
+S08,does he enjoy his work life,does he enjoy his work,0.1852,0.1667
+S07,does he like the boat that we rented yesterday,does he like the boat that was rented yesterday,0.0435,0.1111
+S09,does he like the boat that we rented yesterday,does he own the bear that rented yesterday,0.1957,0.3333
+S08,does he like the boat that we rented yesterday,does he like the boat that he rented yesterday,0.0217,0.1111
+S07,does he not want a salad or soup,does he not want a salad,0.25,0.25
+S09,does he not want a salad or soup,does he not want a divorce,0.3438,0.375
+S08,does he not want a salad or soup,does he love her,0.6562,0.75
+S07,does she feel happy when she wins a competition,does she feel happy when she wins a competition,0,0
+S09,does she feel happy when she wins a competition,does he feel happy when she finds a competitor,0.1064,0.3333
+S08,does she feel happy when she wins a competition,does she feel happy when she wins a competition,0,0
+S07,does she like buying things on sale so much,does she like trying new things,0.4884,0.6667
+S09,does she like buying things on sale so much,does she like cooking things on a stove,0.3023,0.4444
+S08,does she like buying things on sale so much,does she like to buy new clothes,0.5581,0.6667
+S07,does she think it will be cloudy tomorrow,does she think it will be cloudy tomorrow,0,0
+S09,does she think it will be cloudy tomorrow,does she think it will be sunny tomorrow,0.122,0.125
+S08,does she think it will be cloudy tomorrow,does she think it will be cloudy tomorrow,0,0
+S07,does she think that her mom will be feeling sad,does she think her mom will be feeling calm,0.1702,0.2
+S09,does she think that her mom will be feeling sad,does she think that her mom will be feeling sad,0,0
+S08,does she think that her mom will be feeling sad,does she think her mom will feel sad,0.234,0.3
+S07,does the app that i will download have good reviews,does the book that i will sell have an old receipt,0.3922,0.5
+S09,does the app that i will download have good reviews,does the apartment that i will rent have a balcony,0.4902,0.4
+S08,does the app that i will download have good reviews,does the food that i will eat have cheese,0.4118,0.4
+S07,does the car in front of you have a gps system,does the car in front of you have a gps system,0,0
+S09,does the car in front of you have a gps system,does the car in front of you have air conditioning,0.3043,0.2727
+S08,does the car in front of you have a gps system,does the cat on the front porch have a happy tail,0.4565,0.6364
+S07,does the company not hire people without experience or skills,did the company not hire people without experience in skiing,0.1311,0.3
+S09,does the company not hire people without experience or skills,does the company not hire people with similar experience,0.2951,0.4
+S08,does the company not hire people without experience or skills,does the company not hire people with experience or skills,0.0492,0.1
+S07,does the girl who is always crying not need help,does the girl who is always smiling help others,0.3125,0.4
+S09,does the girl who is always crying not need help,does the girl who is angry need help,0.2917,0.3
+S08,does the girl who is always crying not need help,does the giraffe have a long neck,0.5833,0.8
+S07,friends of my parents are coming over tonight,friends of my parents are coming over tonight,0,0
+S09,friends of my parents are coming over tonight,friends of my parents are coming over tonight,0,0
+S08,friends of my parents are coming over tonight,students of many parents are under stress tonight,0.4,0.5
+S07,had he used a microscope to study cells,had he used a microscope to study bacteria,0.1538,0.125
+S09,had he used a microscope to study cells,had he used a lot of time to study,0.3846,0.5
+S08,had he used a microscope to study cells,he used a microscope to study cells,0.1026,0.125
+S07,had the rivers in the valley been flooded before,had the drivers in the valley been tired,0.2708,0.3333
+S09,had the rivers in the valley been flooded before,does the printer in the office work before,0.5,0.5556
+S08,had the rivers in the valley been flooded before,had the rivers in the valley been flooded before,0,0
+S07,had the students submitted their assignments on time,had the students studied their lessons on time,0.25,0.25
+S09,had the students submitted their assignments on time,had the students completed their projects on time,0.2692,0.25
+S08,had the students submitted their assignments on time,had the students finished their homework in time,0.3269,0.375
+S07,had they brought their car seats along,had they faced their fears long as,0.4474,0.5714
+S09,had they brought their car seats along,had they brought their cats along,0.1316,0.2857
+S08,had they brought their car seats along,had they bought their tickets online,0.2895,0.5714
+S07,he does not like the new furniture,he does not like the new furniture,0,0
+S09,he does not like the new furniture,he does not like the new furniture,0,0
+S08,he does not like the new furniture,he does not like old furniture,0.2059,0.2857
+S07,he had been waiting for me outside,she had been waiting for me outside,0.0294,0.1429
+S09,he had been waiting for me outside,he had been eating for hours outside,0.2059,0.2857
+S08,he had been waiting for me outside,she had been waiting for outside,0.1176,0.2857
+S07,he had eaten all the cookies in the jar,he had eaten all the cookies in the jar,0,0
+S09,he had eaten all the cookies in the jar,he had eaten all the cookies in the jar,0,0
+S08,he had eaten all the cookies in the jar,he had eaten all the cookies on the shelf,0.1538,0.2222
+S07,he needs a new phone but it is very expensive,he needs a new phone but it is very expensive,0,0
+S09,he needs a new phone but it is very expensive,he needs a new phone but it is very expensive,0,0
+S08,he needs a new phone but it is very expensive,he wore nice shoes but they were very expensive,0.4444,0.6
+S07,he never forgets to drink water after exercise,he never drinks cold water after exercise,0.2391,0.375
+S09,he never forgets to drink water after exercise,she never forgets to eat breakfast after exercising,0.3478,0.5
+S08,he never forgets to drink water after exercise,he loves to forget to drink water after exercise,0.1522,0.375
+S07,he says the economy is growing rapidly nowadays,he says the economy is growing rapidly,0.1915,0.125
+S09,he says the economy is growing rapidly nowadays,he says the family is growing rapidly,0.3191,0.25
+S08,he says the economy is growing rapidly nowadays,he sous the economy is growing rapidly,0.234,0.25
+S07,he took great photos because he had a good eye for detail,did she create photos because she had a good eye,0.3684,0.5
+S09,he took great photos because he had a good eye for detail,he is great at math because he has a great teacher,0.4737,0.6667
+S08,he took great photos because he had a good eye for detail,he took great pictures because he had a good camera,0.2982,0.3333
+S07,he will be angry if you break his phone,he will be angry if you break his phone,0,0
+S09,he will be angry if you break his phone,he will be angry if you break his home,0.0513,0.1111
+S08,he will be angry if you break his phone,he will be angry if you break his spine,0.0769,0.1111
+S07,he will be excited when his new bike arrives tomorrow,he will be excited when his new child arrives tomorrow,0.0755,0.1
+S09,he will be excited when his new bike arrives tomorrow,he will be excited when he sees the results tomorrow,0.2642,0.4
+S08,he will be excited when his new bike arrives tomorrow,he will be excited about his new arrival tomorrow evening,0.3774,0.4
+S07,he will get a discount because he is a student,he will get a discount because he is a student,0,0
+S09,he will get a discount because he is a student,he will eat a discount because he is a student,0.0435,0.1
+S08,he will get a discount because he is a student,he will get a discount because he is a student,0,0
+S07,he will not find a job in his field of study,he will not find a low in his marks of study,0.1591,0.1818
+S09,he will not find a job in his field of study,he will not find a job in his field fast,0.1136,0.1818
+S08,he will not find a job in his field of study,he will not pass his final exam,0.5227,0.6364
+S07,his sister will not love him because he is mean,his sister will not live with him because he smokes,0.2553,0.4
+S09,his sister will not love him because he is mean,his sister will not live with him because he is busy,0.2128,0.3
+S08,his sister will not love him because he is mean,his sister will not love him because he is mean,0,0
+S07,i appreciate art because it adds beauty to our lives daily,i appreciate your help because it assists us daily,0.4483,0.6364
+S09,i appreciate art because it adds beauty to our lives daily,do people care about art because it adds beauty to our lives daily,0.2586,0.3636
+S08,i appreciate art because it adds beauty to our lives daily,i love her because she brings beauty to our lives daily,0.3276,0.3636
+S07,i had eaten lunch in the office cafeteria,i had eaten lunch in the office,0.2439,0.125
+S09,i had eaten lunch in the office cafeteria,i had eaten lunch in the office,0.2439,0.125
+S08,i had eaten lunch in the office cafeteria,i had eaten lunch at the office,0.2927,0.25
+S07,i will eat on the plane or i will be hungry later,i will eat a sandwich or will be hungry,0.3878,0.4167
+S09,i will eat on the plane or i will be hungry later,i will eat in the lab or will be hungry first,0.2245,0.3333
+S08,i will eat on the plane or i will be hungry later,i will eat lunch or i will be hungry again,0.3265,0.3333
+S07,is a drought predicted for next year,is a storm predicted for next year,0.1667,0.1429
+S09,is a drought predicted for next year,is the new president elected next year,0.5556,0.5714
+S08,is a drought predicted for next year,i was rejected for next year,0.3611,0.5714
+S07,is he a musician because he loves his job,is he a musician because he loves music now,0.1463,0.2222
+S09,is he a musician because he loves his job,is he a musician because he loves music now,0.1463,0.2222
+S08,is he a musician because he loves his job,he is my son because he loves his hobby,0.3415,0.5556
+S07,is my sister not sleeping yet,is my sister not sleeping yet,0,0
+S09,is my sister not sleeping yet,is my sister not sleeping yet,0,0
+S08,is my sister not sleeping yet,is my sister not sleeping yet,0,0
+S07,is she experiencing any side effects,is she experiencing any side effects,0,0
+S09,is she experiencing any side effects,did she experience a lot of stress,0.4722,1
+S08,is she experiencing any side effects,he had been experiencing anxiety for months,0.6389,1
+S07,is she winning the game but feeling very nervous now,is she willing to take the game shot even though she is very nervous now,0.5577,0.8
+S09,is she winning the game but feeling very nervous now,is she feeling very nervous now,0.4038,0.4
+S08,is she winning the game but feeling very nervous now,is she winning the game but feeling very nervous,0.0769,0.1
+S07,is the computer virus going to be removed tonight,is the computer not going to be working tonight,0.2449,0.2222
+S09,is the computer virus going to be removed tonight,is the computer game going to be loved tonight,0.1633,0.2222
+S08,is the computer virus going to be removed tonight,as the computer chips are going to be sold tonight,0.2857,0.4444
+S07,is the country at war but still growing economically,is the country still growing economically,0.2115,0.3333
+S09,is the country at war but still growing economically,is the country rich but still poor,0.4615,0.4444
+S08,is the country at war but still growing economically,is the country at war but still rowing gold medals,0.1923,0.3333
+S07,is the person in front of you not her mom,is the person in front of you not her mother,0.0976,0.1
+S09,is the person in front of you not her mom,is the person in front of you smiling,0.2683,0.3
+S08,is the person in front of you not her mom,is the person in front of you not polite,0.1707,0.2
+S07,is the product still under warranty,is the product still unavailable today,0.3429,0.3333
+S09,is the product still under warranty,is the product still under warranty,0,0
+S08,is the product still under warranty,is the product still under warranty,0,0
+S07,is the story that she will tell going to be interesting,does the story that he will tell make sense,0.4182,0.5455
+S09,is the story that she will tell going to be interesting,is the story that we will tell tonight going to be interesting,0.1818,0.1818
+S08,is the story that she will tell going to be interesting,is the factory that she will work in interesting,0.2909,0.4545
+S07,is the traffic bad because it is rush hour now,is the traffic heavy because it is rush hour,0.1739,0.2
+S09,is the traffic bad because it is rush hour now,did the store close because it is rush hour,0.3478,0.4
+S08,is the traffic bad because it is rush hour now,is the traffic heavy because of the storm,0.413,0.6
+S07,it was not warm enough to go swimming yesterday,it was not warm enough to go swimming yesterday,0,0
+S09,it was not warm enough to go swimming yesterday,it was not warm enough to go skiing yesterday,0.0638,0.1111
+S08,it was not warm enough to go swimming yesterday,it was not warm enough to go swimming yesterday,0,0
+S07,many people used to drink milk for breakfast,many people used to drink milk with breakfast,0.0909,0.125
+S09,many people used to drink milk for breakfast,many people love to eat breakfast,0.4091,0.5
+S08,many people used to drink milk for breakfast,many people used to ride motorcycles not because they were fast,0.6818,0.875
+S07,more people will shop during the summer months abroad,most people will shop during the summer months,0.1698,0.2222
+S09,more people will shop during the summer months abroad,there will be storms during the summer,0.566,0.6667
+S08,more people will shop during the summer months abroad,more people will go swimming next summer,0.4906,0.5556
+S07,my brother is not good at playing table tennis now,my brother is not good at playing tackle,0.26,0.3
+S09,my brother is not good at playing table tennis now,my brother is not very good at playing table tennis,0.18,0.2
+S08,my brother is not good at playing table tennis now,my brother is not good at playing tennis,0.2,0.2
+S07,my dad is cheering for the team that won,my grandma is cooking from the recipe that i found,0.525,0.6667
+S09,my dad is cheering for the team that won,my brother is waiting for the train that leaves tomorrow morning,0.875,0.6667
+S08,my dad is cheering for the team that won,my dad is working on the farm,0.475,0.5556
+S07,my friend does not have children,my friend does not have children,0,0
+S09,my friend does not have children,my friend does not have children,0,0
+S08,my friend does not have children,my friend does not have a car,0.2188,0.3333
+S07,my mom did not call me yesterday,my mom did not cook yesterday morning,0.4375,0.4286
+S09,my mom did not call me yesterday,my mom did not call me yesterday,0,0
+S08,my mom did not call me yesterday,my mom did not call me yesterday,0,0
+S07,my mom is not a good cook,my mom is not a good cook,0,0
+S09,my mom is not a good cook,my mom is not a good cook,0,0
+S08,my mom is not a good cook,my mom is not a good cook,0,0
+S07,my mom used to drive me to school,my mom is used to drive to school,0.1818,0.25
+S09,my mom used to drive me to school,my mom used to drive to school,0.0909,0.125
+S08,my mom used to drive me to school,my mom used to drive me to school,0,0
+S07,my mom will be visiting me next week,my mom will be cooking dinner next week,0.2778,0.25
+S09,my mom will be visiting me next week,my mom will be visiting me next week,0,0
+S08,my mom will be visiting me next week,my mom will be visiting me next week,0,0
+S07,my mom will fly to the beach for vacation next month,my mom will buy a new car next month,0.4231,0.5455
+S09,my mom will fly to the beach for vacation next month,i will fly to the beach for vacation next month,0.1154,0.1818
+S08,my mom will fly to the beach for vacation next month,my mom will buy a new couch next month,0.4231,0.5455
+S07,my tablet is portable so i take it everywhere,my tablet is portable so i can use it everywhere,0.1111,0.2222
+S09,my tablet is portable so i take it everywhere,my laptop is portable so i can take it everywhere,0.2,0.2222
+S08,my tablet is portable so i take it everywhere,my tablet is portable so i take it everywhere,0,0
+S07,passengers must show their tickets,why do sellers not show their tickets,0.3529,0.8
+S09,passengers must show their tickets,programmers must code to solve problems,0.7059,1
+S08,passengers must show their tickets,parents will show their receipts,0.4118,0.6
+S07,she does not want to try it,she does not want to try it,0,0
+S09,she does not want to try it,she does not want to try something new,0.4444,0.2857
+S08,she does not want to try it,she does not want to try it,0,0
+S07,she had built her own computer from scratch,she had built her own computer,0.3023,0.25
+S09,she had built her own computer from scratch,she built her own computer from scratch,0.093,0.125
+S08,she had built her own computer from scratch,she had built her own computer from scratch,0,0
+S07,she has a habit that is very hard to break,she has a habit that she hates,0.3333,0.5
+S09,she has a habit that is very hard to break,she had a painting that is very hard to sell,0.2619,0.3
+S08,she has a habit that is very hard to break,she has a habit that i very hard to break,0.0238,0.1
+S07,she is feeling sad because she lost her loved one recently,she is feeling sad because she lost her love recently,0.0862,0.1818
+S09,she is feeling sad because she lost her loved one recently,she is feeling sad because she lost her loved one recently,0,0
+S08,she is feeling sad because she lost her loved one recently,she is feeling sad because she lost her job recently,0.1379,0.1818
+S07,she is not interested in modern art at all,she is not interested in modern art,0.1667,0.2222
+S09,she is not interested in modern art at all,she is not interested in modern art,0.1667,0.2222
+S08,she is not interested in modern art at all,she is not interested in modern art,0.1667,0.2222
+S07,she painted a beautiful landscape but sold it for a low price,she painted a beautiful landscape but sold it for a low price,0,0
+S09,she painted a beautiful landscape but sold it for a low price,she painted a beautiful landscape with a low pose,0.2623,0.4167
+S08,she painted a beautiful landscape but sold it for a low price,she painted a beautiful landscape but sold it for a slow price,0.0164,0.0833
+S07,she will not be playing tennis next to her brother,she will not be playing tennis next to her brother,0,0
+S09,she will not be playing tennis next to her brother,she will not be paying tennis next to her brother,0.02,0.1
+S08,she will not be playing tennis next to her brother,we will not be playing tennis next week,0.28,0.4
+S07,she will not drive to work because her car broke down,she will not drive to work because her car broke down,0,0
+S09,she will not drive to work because her car broke down,she will not drive to work because she is tired,0.2453,0.3636
+S08,she will not drive to work because her car broke down,she will not drive to work because her car broke down,0,0
+S07,she will study hard yet still find time for her hobbies,she will study hard but still have time for hobbies,0.1818,0.2727
+S09,she will study hard yet still find time for her hobbies,she will not have time for her hobbies,0.3818,0.4545
+S08,she will study hard yet still find time for her hobbies,she will study hard but yet still find time for her hobbies,0.0727,0.0909
+S07,students in the university will not attend the lecture tomorrow,students in the university will not attend the lecture tomorrow,0,0
+S09,students in the university will not attend the lecture tomorrow,the students in the university will not attend the lecture tomorrow,0.0635,0.1
+S08,students in the university will not attend the lecture tomorrow,students in the university will not attend the lecture tomorrow,0,0
+S07,students who like science are very good at problem solving,students who like math are very good at problem solving,0.1207,0.1
+S09,students who like science are very good at problem solving,students who like math are very good at problem solving,0.1207,0.1
+S08,students who like science are very good at problem solving,students who like science are very good at solving problems,0.2414,0.2
+S07,students who study math are very logical thinkers,students who study math are very logical,0.1837,0.125
+S09,students who study math are very logical thinkers,students who study hard are very successful,0.3673,0.375
+S08,students who study math are very logical thinkers,students who study hard are very successful,0.3673,0.375
+S07,that violinist plays music that touches my heart,the band will play songs that resonate with their audience,0.7917,1.125
+S09,that violinist plays music that touches my heart,the band inside plays music that touched my heart,0.2292,0.5
+S08,that violinist plays music that touches my heart,the pianist played music that touched my heart,0.1875,0.5
+S07,the algorithm used now will not be effective later,the algorithm that we used will not be effective,0.34,0.4444
+S09,the algorithm used now will not be effective later,the athlete will not be effective,0.4,0.4444
+S08,the algorithm used now will not be effective later,the women with disabilities will not be affected,0.56,0.5556
+S07,the animal that made the biggest footprint was an elephant,the animal that ate the big carrot was a rabbit,0.3621,0.5
+S09,the animal that made the biggest footprint was an elephant,the animals that lived in the forest were the goats,0.5345,0.8
+S08,the animal that made the biggest footprint was an elephant,the memories that made me happiest were the past,0.5862,0.7
+S07,the animals that migrate in autumn travel long distances,the animals that live in autumn travel long distances,0.0893,0.1111
+S09,the animals that migrate in autumn travel long distances,the animals that migrate in spring travel long distances,0.1071,0.1111
+S08,the animals that migrate in autumn travel long distances,they are animals that migrate south for winter,0.5,0.7778
+S07,the apps that the developers created were very popular,the apps that the developers created were very popular,0,0
+S09,the apps that the developers created were very popular,the artworks that the workers created are very colorful,0.4074,0.4444
+S08,the apps that the developers created were very popular,the algorithms that the developers created were very efficient,0.3148,0.2222
+S07,the athlete who is injured will not participate in the game,the athlete who is injured will not participate in the game,0,0
+S09,the athlete who is injured will not participate in the game,the athlete who gets injured will not participate in the game,0.0508,0.0909
+S08,the athlete who is injured will not participate in the game,the athlete who is injured will not participate in the game,0,0
+S07,the athletes at the gym had been training for months outdoors,the athletes at the gym had been training from morning to night,0.2295,0.3636
+S09,the athletes at the gym had been training for months outdoors,the athletes had been training for months,0.3279,0.3636
+S08,the athletes at the gym had been training for months outdoors,the athlete at the gym had been training for months,0.1639,0.1818
+S07,the boy who helped me had been very kind,the person who helped me had been very kind,0.125,0.1111
+S09,the boy who helped me had been very kind,the boy who helped me had been very kind,0,0
+S08,the boy who helped me had been very kind,the boy who rode a bike was very proud,0.475,0.5556
+S07,the boy who will eat the sandwich is very hungry,the boy who will eat the sandwich is very hungry,0,0
+S09,the boy who will eat the sandwich is very hungry,the boy who will eat the sandwich is very hungry,0,0
+S08,the boy who will eat the sandwich is very hungry,the coyote who will eat the deer is very hungry,0.2292,0.2
+S07,the boy will not enjoy the party,the boy will not be invited to the party,0.3438,0.4286
+S09,the boy will not enjoy the party,the guests will not enjoy the party,0.1875,0.1429
+S08,the boy will not enjoy the party,the boy will not join the party,0.125,0.1429
+S07,the car that i bought was not very fast,the car that i bought was not very fast,0,0
+S09,the car that i bought was not very fast,the car that i bought was at very high price,0.3077,0.3333
+S08,the car that i bought was not very fast,the car that i bought was not very fast,0,0
+S07,the carpet that i will buy will not be red,the car that i will buy will not be red,0.0714,0.1
+S09,the carpet that i will buy will not be red,the car that i will buy will not be red,0.0714,0.1
+S08,the carpet that i will buy will not be red,the car that i will buy will not be expensive,0.2619,0.2
+S07,the computer will have stored all the data by then,the computer will have stored all the data by then,0,0
+S09,the computer will have stored all the data by then,the computer will have stored all the data by then,0,0
+S08,the computer will have stored all the data by then,the computer will have enough storage on the data by then,0.26,0.3
+S07,the couple will buy a home where they can raise kids,the couple will buy a house where they can relax,0.1923,0.2727
+S09,the couple will buy a home where they can raise kids,the couple will buy a home where they live,0.2308,0.2727
+S08,the couple will buy a home where they can raise kids,the couple will buy a house where they can raise their kids,0.1538,0.1818
+S07,the course i am taking is not very difficult,the course i am taking is not very difficult,0,0
+S09,the course i am taking is not very difficult,the course that i am taking is not very difficult,0.1136,0.1111
+S08,the course i am taking is not very difficult,the exercise i am doing is not very difficult,0.1818,0.2222
+S07,the crowd was cheering for their favorite team,the players were cheering for their favorite team,0.2174,0.25
+S09,the crowd was cheering for their favorite team,the woman was cheering for her favorite team,0.1522,0.25
+S08,the crowd was cheering for their favorite team,they graduated with honors for their favorite subjects,0.5435,0.625
+S07,the dogs that ran quickly were very thirsty,the dogs that eat quickly were very hungry,0.1628,0.25
+S09,the dogs that ran quickly were very thirsty,the dogs that ran quickly were very time sensitive,0.2558,0.25
+S08,the dogs that ran quickly were very thirsty,the dogs that ran quickly were very athletic,0.1395,0.125
+S07,the door is not open,the door is not open,0,0
+S09,the door is not open,the door is not open,0,0
+S08,the door is not open,the door is not open,0,0
+S07,the doors were not locked last night,the doors were not locked last night,0,0
+S09,the doors were not locked last night,the doors were not locked last night,0,0
+S08,the doors were not locked last night,the door was not locked last night,0.1111,0.2857
+S07,the drivers on the road are not paying attention,the drivers on the road are not paying attention,0,0
+S09,the drivers on the road are not paying attention,the drivers on the roads are not paying attention,0.0208,0.1111
+S08,the drivers on the road are not paying attention,the drivers on the road are not paying attention,0,0
+S07,the economists will analyze the current market trends,the economists will analyze the current economic trends,0.1509,0.125
+S09,the economists will analyze the current market trends,the economists will analyze current market trends,0.0755,0.125
+S08,the economists will analyze the current market trends,the economists will analyze the current market trends,0,0
+S07,the electric car will be more affordable next year,the electric car will be more affordable next year,0,0
+S09,the electric car will be more affordable next year,the electric car will be more affordable next year,0,0
+S08,the electric car will be more affordable next year,the electric car will be more affordable next year,0,0
+S07,the employees of the company had received their paychecks last week,the employees of the company had received their paychecks last week,0,0
+S09,the employees of the company had received their paychecks last week,the employees on the team had worked overtime last week,0.3731,0.4545
+S08,the employees of the company had received their paychecks last week,the employees of the company were happy last year,0.3731,0.4545
+S07,the engineer will not design a new bridge,the engineer will not design a new bridge,0,0
+S09,the engineer will not design a new bridge,the engineer will not design a new fridge,0.0244,0.125
+S08,the engineer will not design a new bridge,the engineer will not design a new fridge,0.0244,0.125
+S07,the family next door will have a big party tonight,the family next door will have a birthday party tonight,0.12,0.1
+S09,the family next door will have a big party tonight,the family next door will have a big party tonight,0,0
+S08,the family next door will have a big party tonight,the friends next door will have a big party tonight,0.12,0.1
+S07,the farmers who grew those crops were hardworking people,the farmers who grew these crops were helping people,0.1429,0.2222
+S09,the farmers who grew those crops were hardworking people,the farmers who grew crops were hard working,0.25,0.3333
+S08,the farmers who grew those crops were hardworking people,the farmers who grew those crops were hard working people,0.0179,0.2222
+S07,the ferries will sail across the lake every hour tomorrow,the boat will cross the lake every morning tomorrow,0.3333,0.4
+S09,the ferries will sail across the lake every hour tomorrow,the cyclists will ride across the lake tomorrow,0.3684,0.4
+S08,the ferries will sail across the lake every hour tomorrow,the cyclists will ride across the lake every hour tomorrow,0.1754,0.2
+S07,the flowers that i will give her are beautiful,the flower that i will give her is beautiful,0.087,0.2222
+S09,the flowers that i will give her are beautiful,the flowers that i will give her are beautiful,0,0
+S08,the flowers that i will give her are beautiful,the flowers that i will plant will be beautiful,0.2391,0.3333
+S07,the girl from our school will not win the competition,the girl from our school will not be in the competition,0.0566,0.2
+S09,the girl from our school will not win the competition,the girl in our school will not win the competition,0.0755,0.1
+S08,the girl from our school will not win the competition,the girl from our school will not win the competition,0,0
+S07,the girl in front of me was very happy yesterday,the bird in front of me was very happy yesterday,0.0417,0.1
+S09,the girl in front of me was very happy yesterday,the girl in front of me was very happy yesterday,0,0
+S08,the girl in front of me was very happy yesterday,the girl in front of me was very happy yesterday,0,0
+S07,the girl will not have dessert because she is full,the girl will not have dessert because she is hungry,0.1,0.1
+S09,the girl will not have dessert because she is full,the girl will not be having dessert because she is full,0.12,0.2
+S08,the girl will not have dessert because she is full,the girl will not have a dog,0.5,0.5
+S07,the hill in front of us is not steep,the hill in front of us is not steep,0,0
+S09,the hill in front of us is not steep,the hill in front of us is not steep,0,0
+S08,the hill in front of us is not steep,the hill in front of us is not free,0.0833,0.1111
+S07,the hockey players were not experienced but they played a great game,the new players were not experienced but they played great,0.1765,0.25
+S09,the hockey players were not experienced but they played a great game,the hockey players were not friends but they played together,0.2353,0.3333
+S08,the hockey players were not experienced but they played a great game,the hockey players were not experienced but they played a great game,0,0
+S07,the houses on our street are not very big,the houses on our street are not very clean,0.122,0.1111
+S09,the houses on our street are not very big,the flowers on the street are not very beautiful,0.3659,0.3333
+S08,the houses on our street are not very big,the houses on our street are not very big,0,0
+S07,the items on the list were checked by employees,the items of the store were checked by employees,0.1277,0.2222
+S09,the items on the list were checked by employees,the items on her lost had been taken by employees,0.2979,0.5556
+S08,the items on the list were checked by employees,the teams on the field were checked by the referees,0.2979,0.4444
+S07,the job market was tough but people found employment,the job market was tough but people found employment,0,0
+S09,the job market was tough but people found employment,the job market was tough but people found employment,0,0
+S08,the job market was tough but people found employment,the job market was tough but people found jobs,0.1731,0.1111
+S07,the kid on the bike was screaming with excitement,the kids were laughing with excitement,0.3673,0.6667
+S09,the kid on the bike was screaming with excitement,the kid on the slide was creaming with excitement,0.0816,0.2222
+S08,the kid on the bike was screaming with excitement,the old man in the bike was screening with experiment,0.2653,0.5556
+S07,the kids were playing outside when they got hurt,the kids were playing outside while it was sunny,0.2917,0.4444
+S09,the kids were playing outside when they got hurt,the kids were playing outside when they got tired,0.0833,0.1111
+S08,the kids were playing outside when they got hurt,the kids were playing outside when it rained,0.25,0.3333
+S07,the lady on my left has a bandage,the baby in my arms had a bandage,0.2424,0.5
+S09,the lady on my left has a bandage,the lady on my left has a banana,0.0909,0.125
+S08,the lady on my left has a bandage,the lightning storm had a warning,0.5758,0.75
+S07,the leaves will be falling off the trees soon outside,the leaves will be falling off the trees outside,0.0943,0.1
+S09,the leaves will be falling off the trees soon outside,the leaves will fall from the tree outside,0.283,0.5
+S08,the leaves will be falling off the trees soon outside,the eaves will be attached to the tree soon,0.3962,0.5
+S07,the little boy is shy around strangers,the butterfly had flown around the flowers,0.5789,0.8571
+S09,the little boy is shy around strangers,the pilot is flying around the airport,0.5526,0.7143
+S08,the little boy is shy around strangers,the man hated being around strangers,0.4211,0.5714
+S07,the man next to my mom will not be her brother,the man next to my friend will not be my brother,0.1957,0.1818
+S09,the man next to my mom will not be her brother,the man next to my husband will not be her brother,0.1522,0.0909
+S08,the man next to my mom will not be her brother,the man next to my sister will not be her brother,0.1304,0.0909
+S07,the man on the phone will not sound upset later,the man in the photo will not be apart,0.3617,0.5
+S09,the man on the phone will not sound upset later,the man in the phone will not sound happy,0.234,0.3
+S08,the man on the phone will not sound upset later,the man in the shop will not find happiness here,0.383,0.5
+S07,the man will buy some fresh vegetables,the family will buy a new sofa,0.5789,0.5714
+S09,the man will buy some fresh vegetables,the man will buy fresh vegetables,0.1316,0.1429
+S08,the man will buy some fresh vegetables,the men will buy some fresh vegetables,0.0263,0.1429
+S07,the math problem that she tried to solve was not easy,the math problem that she solved was not very difficult,0.434,0.4545
+S09,the math problem that she tried to solve was not easy,the math problem that she is trying to solve is not easy,0.1509,0.2727
+S08,the math problem that she tried to solve was not easy,the math problem that she tried to solve was not easy,0,0
+S07,the men did not like the food at the party,the men did not like the food at the party,0,0
+S09,the men did not like the food at the party,the men did not like the food at the party,0,0
+S08,the men did not like the food at the party,the men did not like the food at the party,0,0
+S07,the men will offer their seats to the women on the bus,the men will give their gifts to the women in the family,0.2593,0.3333
+S09,the men will offer their seats to the women on the bus,the men will carry their goods to the woman in the bus,0.2037,0.3333
+S08,the men will offer their seats to the women on the bus,the men will share their meals with the women,0.3889,0.5
+S07,the mountains were steep where the hikers got lost last year,the mountains were steep where the hikers got lost last year,0,0
+S09,the mountains were steep where the hikers got lost last year,the mountains were steep but the hikers reached the top last year,0.3,0.3636
+S08,the mountains were steep where the hikers got lost last year,the mountain was steep where we hiked last year,0.2833,0.5455
+S07,the music is not too loud,the music is not too loud,0,0
+S09,the music is not too loud,the journey is not too long,0.32,0.3333
+S08,the music is not too loud,the music is not too loud,0,0
+S07,the musician without an instrument will not make music,the musician without the instrument will not play beautifully,0.2963,0.3333
+S09,the musician without an instrument will not make music,the musicians without a guitar will not be playing music,0.3704,0.5556
+S08,the musician without an instrument will not make music,the musician without a instrument will not be a good musician,0.2222,0.5556
+S07,the new employees were struggling but their colleagues helped them,the new employees were struggling but their colleagues helped them,0,0
+S09,the new employees were struggling but their colleagues helped them,the new employees were struggling but their colleagues helped,0.0758,0.1
+S08,the new employees were struggling but their colleagues helped them,the new employees were struggling but the team leader helped them,0.1364,0.3
+S07,the new policy will not affect her job,the new policy will not affect her,0.1053,0.125
+S09,the new policy will not affect her job,the new policy will not affect her income,0.1316,0.125
+S08,the new policy will not affect her job,the new policy will not affect her,0.1053,0.125
+S07,the nights are still very cold,the house was still very cold,0.3,0.3333
+S09,the nights are still very cold,the lights were still very cold,0.1,0.3333
+S08,the nights are still very cold,the air outside is still very cold,0.3667,0.5
+S07,the patients who have anxiety are not sleeping at night,the patients who have anxiety are not sleeping at night,0,0
+S09,the patients who have anxiety are not sleeping at night,the patients who have anxiety are not sleeping at night,0,0
+S08,the patients who have anxiety are not sleeping at night,the patients who have anxiety are not sleeping at nights,0.0182,0.1
+S07,the people at the gym were working out very hard yesterday,the people at the gym were working out very hard yesterday,0,0
+S09,the people at the gym were working out very hard yesterday,the people at the gym were working out very hard yesterday,0,0
+S08,the people at the gym were working out very hard yesterday,the people at the gym were working out very hard yesterday,0,0
+S07,the person that donates the most will be recognized publicly,the person who won the most will be recognized soon,0.2667,0.3
+S09,the person that donates the most will be recognized publicly,the person that committed the most crimes will be imprisoned,0.5,0.4
+S08,the person that donates the most will be recognized publicly,the person who made the mistake will be reprimanded properly,0.4,0.5
+S07,the person who helps me will make me grateful tomorrow,the person who helps me will make me grateful tomorrow,0,0
+S09,the person who helps me will make me grateful tomorrow,the person who helps me will make me grateful tomorrow,0,0
+S08,the person who helps me will make me grateful tomorrow,the person who helped me will be angry tomorrow,0.2593,0.4
+S07,the phone will ring when someone calls you tonight,the phone will ring when someone calls you tonight,0,0
+S09,the phone will ring when someone calls you tonight,the phone will ring when i call you tonight,0.16,0.2222
+S08,the phone will ring when someone calls you tonight,the phone will ring when someone calls you tonight,0,0
+S07,the plant on the table was dying slowly,the plant on the table was dying slowly,0,0
+S09,the plant on the table was dying slowly,the plant on the table was growing slowly,0.1026,0.125
+S08,the plant on the table was dying slowly,the plant on the table was growing slowly,0.1026,0.125
+S07,the plants will not need much water next spring,the plants will not need much water next spring,0,0
+S09,the plants will not need much water next spring,the plants will not need lush water next week,0.1702,0.2222
+S08,the plants will not need much water next spring,the plants will not need much water next spring,0,0
+S07,the players on our team are feeling proud,the players on our team are feeling proud,0,0
+S09,the players on our team are feeling proud,the players on our team are feeling optimistic,0.2195,0.125
+S08,the players on our team are feeling proud,the players on our team are feeling proud,0,0
+S07,the poets of the city used to meet regularly,the posts of the city used to be updated regularly,0.2045,0.3333
+S09,the poets of the city used to meet regularly,the hits of the city used to meet each other,0.2955,0.3333
+S08,the poets of the city used to meet regularly,the leaders of the cities will meet soon,0.5,0.5556
+S07,the prices of those shoes were not very low,the prices of those shoes were not very high,0.093,0.1111
+S09,the prices of those shoes were not very low,the prices of those shoes were not very high,0.093,0.1111
+S08,the prices of those shoes were not very low,the prices of these shoes were not very high,0.1163,0.2222
+S07,the product i wanted was out of stock last week,the product that i wanted was out of stock last week,0.1064,0.1
+S09,the product i wanted was out of stock last week,the product i wanted was not in stock last week,0.0851,0.2
+S08,the product i wanted was out of stock last week,the project i worked on was about the stock last week,0.2766,0.5
+S07,the products they sell are cheaper than those in stores,the products they sell are cheaper than those in stores,0,0
+S09,the products they sell are cheaper than those in stores,the products that they sell are not healthy,0.5091,0.6
+S08,the products they sell are cheaper than those in stores,the products that they sell are cheaper than those in stores,0.0909,0.1
+S07,the programmers will create more secure online platforms,the programmers will create a secure online platform,0.0893,0.25
+S09,the programmers will create more secure online platforms,the oceanographers will create new models for climate change,0.5357,0.75
+S08,the programmers will create more secure online platforms,the programmers will create more efficient algorithms,0.3214,0.375
+S07,the referees will make decisions so the game is fair,the referees will make fair decisions on the game,0.2885,0.4
+S09,the referees will make decisions so the game is fair,the referees will make decisions so the game is fair,0,0
+S08,the referees will make decisions so the game is fair,the referees will be deciding the final score,0.3846,0.6
+S07,the robot moved slowly yet it was very efficient,the robot moved slowly but it was very efficient,0.0417,0.1111
+S09,the robot moved slowly yet it was very efficient,the robot moved slowly but it was very careful,0.2292,0.2222
+S08,the robot moved slowly yet it was very efficient,the robot lives slowly,0.6042,0.6667
+S07,the salesperson who helped me was very knowledgeable,the volunteers who helped me was very kind,0.3654,0.25
+S09,the salesperson who helped me was very knowledgeable,the salesperson who helped me was very helpful,0.2115,0.125
+S08,the salesperson who helped me was very knowledgeable,the salesperson who helped me was very nice,0.2115,0.125
+S07,the screen on the wall was displaying data,the cream on the fall was not displaying salmon,0.3095,0.5
+S09,the screen on the wall was displaying data,the painting on the wall was displayed,0.3333,0.375
+S08,the screen on the wall was displaying data,the painting on the wall had been displayed for years,0.5714,0.75
+S07,the skiers are not happy with the lack of snow,the skiers are not happy with the weather,0.2609,0.3
+S09,the skiers are not happy with the lack of snow,the customers are not happy with the service,0.3696,0.4
+S08,the skiers are not happy with the lack of snow,the skiers are not happy because of the lack of snow,0.2174,0.2
+S07,the smokers will try to quit next month,the smokers will try to quit next month,0,0
+S09,the smokers will try to quit next month,the workers will stay to work next month,0.2308,0.375
+S08,the smokers will try to quit next month,the smokers will try to quit next month,0,0
+S07,the software that we use is very efficient,the dog that we have is very excited,0.381,0.375
+S09,the software that we use is very efficient,the doctor who treats us is very kind,0.5,0.625
+S08,the software that we use is very efficient,the gist of what we discussed is very important,0.5,0.625
+S07,the storms of winter will not be very mild,the store that sells water will not be very popular,0.4524,0.5556
+S09,the storms of winter will not be very mild,the weather of winter will not be very cold,0.2143,0.2222
+S08,the storms of winter will not be very mild,the storms in winter will take very long,0.2381,0.4444
+S07,the storms were approaching from the east coast,the storms were approaching from the south,0.1702,0.25
+S09,the storms were approaching from the east coast,the prices were rising from last year,0.4468,0.625
+S08,the storms were approaching from the east coast,the muscles were so aching from the new workout,0.4255,0.625
+S07,the student who manages stress will perform better academically,the student who practices regularly will perform better academically,0.2381,0.2222
+S09,the student who manages stress will perform better academically,the student who manages stress will perform better,0.2063,0.1111
+S08,the student who manages stress will perform better academically,the student who manages stress will perform better,0.2063,0.1111
+S07,the students are learning about art history now,the students are learning about ancient history now,0.1064,0.125
+S09,the students are learning about art history now,the students are learning about art history now,0,0
+S08,the students are learning about art history now,the students are learning about art history now,0,0
+S07,the students had not studied for their history exam,the students had not studied for their history exam,0,0
+S09,the students had not studied for their history exam,the students had not studied for their history exam,0,0
+S08,the students had not studied for their history exam,the students had not finished their homework,0.3922,0.4444
+S07,the sun will shine brightly tomorrow morning,the sun will shine brightly tomorrow morning,0,0
+S09,the sun will shine brightly tomorrow morning,the sun will shine brightly tomorrow morning,0,0
+S08,the sun will shine brightly tomorrow morning,the sun will shine brightly tomorrow morning,0,0
+S07,the teacher does not know much about world history,the teacher does not like teaching history,0.38,0.4444
+S09,the teacher does not know much about world history,the teacher does not have a long work history,0.28,0.4444
+S08,the teacher does not know much about world history,the teacher does not like teaching history,0.38,0.4444
+S07,the teams in the league had been competing for months already,the teams in the league had been competing for months already,0,0
+S09,the teams in the league had been competing for months already,the teams in the league had been competing for months,0.1311,0.0909
+S08,the teams in the league had been competing for months already,the teams on the field will be competing for months,0.3443,0.4545
+S07,the teenagers will not understand the risks,the teenagers will not understand the road signs,0.1628,0.2857
+S09,the teenagers will not understand the risks,the teenagers will not understand that principle,0.2093,0.2857
+S08,the teenagers will not understand the risks,the teenagers will not understand the reasons,0.093,0.1429
+S07,the traffic in this city is not getting better,the traffic on this street is not getting better,0.1522,0.2222
+S09,the traffic in this city is not getting better,the traffic in this city is not getting better,0,0
+S08,the traffic in this city is not getting better,the traffic on the city roads was not heavy,0.4565,0.6667
+S07,the tree in our backyard does not bloom every year,the tree in our backyard does not bloom every year,0,0
+S09,the tree in our backyard does not bloom every year,the tree in our backyard does not bloom every year,0,0
+S08,the tree in our backyard does not bloom every year,the tree in our backyard does not bloom every year,0,0
+S07,the weather changes with the seasons now,the weather changes with the seasons,0.1,0.1429
+S09,the weather changes with the seasons now,the cashier changes the price of the dress,0.575,0.8571
+S08,the weather changes with the seasons now,the weather changes with the seasons,0.1,0.1429
+S07,the websites that they are designing will be very userfriendly,the rabbits that they are drawing will be very friendly,0.2097,0.3
+S09,the websites that they are designing will be very userfriendly,the recipes that they are designing will be very popular,0.2581,0.2
+S08,the websites that they are designing will be very userfriendly,they will be very friendly,0.5806,0.6
+S07,the women in the office will have a meeting soon,the women in the office will have a meeting soon,0,0
+S09,the women in the office will have a meeting soon,the women in the office will have a meeting soon,0,0
+S08,the women in the office will have a meeting soon,the manager in the office will have a meeting soon,0.125,0.1
+S07,the workers are not on a break now,the wires are not on a break now,0.0882,0.125
+S09,the workers are not on a break now,the workers are not licensed,0.3824,0.5
+S08,the workers are not on a break now,the workers were not on their break,0.3235,0.375
+S07,these shoes are not on sale today,the shoes are not in sale today,0.0909,0.2857
+S09,these shoes are not on sale today,the shoes are not on sale today,0.0606,0.1429
+S08,these shoes are not on sale today,students are not in school today,0.4545,0.5714
+S07,they are preparing for presentations because they want to do well,they are preparing for presenting because they speak so well,0.1846,0.3636
+S09,they are preparing for presentations because they want to do well,they are preparing food because they want to eat well,0.2615,0.2727
+S08,they are preparing for presentations because they want to do well,they are repairing or painting because they want to sell,0.2308,0.4545
+S07,they did not eat the vegetables from the garden,they did not eat the vegetables from the garden,0,0
+S09,they did not eat the vegetables from the garden,they did not eat the vegetables from their garden,0.0426,0.1111
+S08,they did not eat the vegetables from the garden,they did not eat the bread that the warden gave,0.383,0.4444
+S07,they do not like to travel by plane anymore,they do not like to travel by plane anymore,0,0
+S09,they do not like to travel by plane anymore,they do not like to travel by plane anymore,0,0
+S08,they do not like to travel by plane anymore,they do not like the travel plan,0.3256,0.4444
+S07,they had been planning their trip,my friends had been planning their trip,0.2727,0.3333
+S09,they had been planning their trip,they had been planning their trip,0,0
+S08,they had been planning their trip,they had a great road trip,0.5152,0.5
+S07,they took the photos that we will always remember,they took the photos that we will use tomorrow,0.2653,0.2222
+S09,they took the photos that we will always remember,we will find the piles that we will need,0.5714,0.6667
+S08,they took the photos that we will always remember,they will never forget the photos,0.7551,0.8889
+S07,they will feel happy when they get married next year,they will feel happy when they get married next year,0,0
+S09,they will feel happy when they get married next year,they will be happy when they get married next year,0.0577,0.1
+S08,they will feel happy when they get married next year,they will feel happy when they get married next year,0,0
+S07,they will not become close friends in the future,will they not be close friends on the future,0.2708,0.4444
+S09,they will not become close friends in the future,they will not have many friends in the future,0.2083,0.2222
+S08,they will not become close friends in the future,they will not become close friends in the future,0,0
+S07,they will not eat breakfast but they will have lunch,they will not eat breakfast but they will have lunch,0,0
+S09,they will not eat breakfast but they will have lunch,they will not eat breakfast but they will have lunch,0,0
+S08,they will not eat breakfast but they will have lunch,they will not eat breakfast but they will have lunch,0,0
+S07,this bird does not sing a beautiful song,the bird does not sing a beautiful song,0.05,0.125
+S09,this bird does not sing a beautiful song,this book does not have a beautiful cover,0.275,0.375
+S08,this bird does not sing a beautiful song,this girl does not sing a beautiful song,0.05,0.125
+S07,this fish will not survive in cold water,the fish will not survive in polluted water,0.175,0.25
+S09,this fish will not survive in cold water,the plane will not survive the storm,0.45,0.625
+S08,this fish will not survive in cold water,the fish will not survive in cold water,0.05,0.125
+S07,was the book on the shelf about a famous historical event,was the book on the shelf about a historical event,0.1228,0.0909
+S09,was the book on the shelf about a famous historical event,was the book on the shelf about a famous historical figure,0.1053,0.0909
+S08,was the book on the shelf about a famous historical event,was the book on the shelf about a famous trial,0.193,0.1818
+S07,was the boy in the bed feeling tired,was the baby in the bed feeling threatened,0.2222,0.25
+S09,was the boy in the bed feeling tired,was the boy on the bench feeling sad,0.2222,0.375
+S08,was the boy in the bed feeling tired,was the water on the beach feeling cold,0.3611,0.5
+S07,was the champion proud when she accepted her trophy,was the champion proud when she achieved her trophy,0.0784,0.1111
+S09,was the champion proud when she accepted her trophy,was the champion proud when she accepted her trophy,0,0
+S08,was the champion proud when she accepted her trophy,was the champion not happy when she lost,0.4902,0.5556
+S07,was the climate dry where your friend used to live,was the climate cold where your friend used to live,0.08,0.1
+S09,was the climate dry where your friend used to live,was the athlete very weak when he got hurt,0.56,0.8
+S08,was the climate dry where your friend used to live,was the climate warm where your grandparents lived,0.26,0.5
+S07,was the frost very severe last night,was the traffic very heavy last night,0.3056,0.2857
+S09,was the frost very severe last night,was the weather very cold last night,0.3611,0.2857
+S08,was the frost very severe last night,was the storm very severe last night,0.1111,0.1429
+S07,was the girl behind you your cousin,was the girl sitting next to you feeling anxious,0.7429,0.7143
+S09,was the girl behind you your cousin,was the girl in front of you my cousin,0.3429,0.5714
+S08,was the girl behind you your cousin,was the girl sitting on your bus,0.3143,0.4286
+S07,was the museum not open yesterday,was the museum not open yesterday,0,0
+S09,was the museum not open yesterday,was the museum not open yesterday,0,0
+S08,was the museum not open yesterday,was the museum not open yesterday,0,0
+S07,was the music from the room upstairs loud,was the music too loud,0.4634,0.5
+S09,was the music from the room upstairs loud,was the music from the speakers loud,0.2439,0.25
+S08,was the music from the room upstairs loud,was the music loud in the room,0.5122,0.5
+S07,was the phone that you lost very expensive,was the phone that he lost very expensive,0.0714,0.125
+S09,was the phone that you lost very expensive,was the phone that you lifted very expensive,0.0952,0.125
+S08,was the phone that you lost very expensive,was the phone that you lost very expensive,0,0
+S07,was the summer that we spent at the beach very hot,was the sun that we saw at the beach very hot,0.16,0.1818
+S09,was the summer that we spent at the beach very hot,was the surfer that we saw at the beach very good,0.18,0.2727
+S08,was the summer that we spent at the beach very hot,was the sun that we saw at the beach very hot,0.16,0.1818
+S07,was the temperature higher last summer,was the temperature low at night last summer,0.2632,0.5
+S09,was the temperature higher last summer,was the temperature high last summer,0.0526,0.1667
+S08,was the temperature higher last summer,was the temperature high in her at summer,0.1842,0.6667
+S07,was the traffic heavy on friday evening,was the traffic heavy in friday morning,0.1026,0.2857
+S09,was the traffic heavy on friday evening,was the traffic heavy on friday morning,0.0769,0.1429
+S08,was the traffic heavy on friday evening,does the tree in front of the house have leaves,0.7949,1.2857
+S07,was the violin made by a skilled craftsman,was the sculpture made by a skilled craftsman,0.1905,0.125
+S09,was the violin made by a skilled craftsman,was the roof made by a skilled carpenter,0.3095,0.25
+S08,was the violin made by a skilled craftsman,was the cook in the kitchen skilled,0.5714,0.625
+S07,we will eat the food that they have prepared,we will eat the food that they have prepared,0,0
+S09,we will eat the food that they have prepared,you will eat the food that they have prepared,0.0682,0.1111
+S08,we will eat the food that they have prepared,we will eat the food that they have prepared,0,0
+S07,were the doctors who treated them very experienced,were the doctors who treated them very experienced,0,0
+S09,were the doctors who treated them very experienced,were the doctors who treated the patients very experienced,0.18,0.25
+S08,were the doctors who treated them very experienced,were the doctors who treated him very experienced,0.04,0.125
+S07,were the paintings sold quickly because they were very good,were the paintings sold quickly because they are very good,0.0339,0.1
+S09,were the paintings sold quickly because they were very good,were the painters very skilled because they were very good,0.2203,0.3
+S08,were the paintings sold quickly because they were very good,were the items on sale sold quickly because they were very good,0.1864,0.3
+S07,were the rivers frozen so people skated on them,were the rivers drying up for the people,0.4894,0.6667
+S09,were the rivers frozen so people skated on them,were the borders not clear who controlled the area,0.6383,0.7778
+S08,were the rivers frozen so people skated on them,were the rivers active so people could fish in them,0.3617,0.4444
+S07,were the tourists in the city visiting old museums,were the tourists in the city visiting a museum,0.08,0.2222
+S09,were the tourists in the city visiting old museums,were the tourists on the city walking around,0.32,0.4444
+S08,were the tourists in the city visiting old museums,were the tourists on the bus visiting the museum,0.18,0.4444
+S07,were the women not depressed but just unhappy with life,were the women not respected but still unhappy,0.3636,0.4
+S09,were the women not depressed but just unhappy with life,were the residents of the neighborhood unhappy with the noise,0.5818,0.7
+S08,were the women not depressed but just unhappy with life,were the friends not depressed but lost happiness,0.3455,0.5
+S07,were the women not told about the risks of that treatment,were the workers not tired about the long hours,0.4737,0.5455
+S09,were the women not told about the risks of that treatment,were the women told about the risks of that treatment,0.0702,0.0909
+S08,were the women not told about the risks of that treatment,were the women not worried about the risks of the treatment,0.1228,0.1818
+S07,will a new mountain range be forming underwater,will a new mountain range be formed under water,0.0851,0.375
+S09,will a new mountain range be forming underwater,will a new mountain be coming underwater,0.1702,0.25
+S08,will a new mountain range be forming underwater,will the mountain range be forming soon,0.2979,0.375
+S07,will he be able to walk after his surgery is done,will he be able to train after his injury,0.3469,0.3636
+S09,will he be able to walk after his surgery is done,will he be able to walk after a surgery,0.2245,0.2727
+S08,will he be able to walk after his surgery is done,will he be able to walk after his surgery,0.1633,0.1818
+S07,will he be taking his medication on time today,will he be taking his medication on time today,0,0
+S09,will he be taking his medication on time today,will he be taking his medication on time today,0,0
+S08,will he be taking his medication on time today,will he be taking his medication on time today,0,0
+S07,will he have eaten by the time i arrive,will he have eaten by the time i arrive,0,0
+S09,will he have eaten by the time i arrive,will he have eaten breakfast,0.4359,0.5556
+S08,will he have eaten by the time i arrive,will he have eaten before the train arrives,0.2821,0.4444
+S07,will he have enough time to mow the lawn tomorrow,will he have enough time to finish the homework tomorrow,0.2653,0.2
+S09,will he have enough time to mow the lawn tomorrow,will he have enough time to relax tomorrow,0.1837,0.3
+S08,will he have enough time to mow the lawn tomorrow,will he have enough time to finish his homework tomorrow,0.3265,0.3
+S07,will he have finished eating by the time we leave,will he have finished eating by the time we leave,0,0
+S09,will he have finished eating by the time we leave,will he have finished eating by the time we arrive,0.0816,0.1
+S08,will he have finished eating by the time we leave,will he have finished eating by time,0.2653,0.3
+S07,will i get a raise this year,will i get a raise,0.3571,0.2857
+S09,will i get a raise this year,will i get thirsty this heat,0.3214,0.4286
+S08,will i get a raise this year,will i eat a salad for lunch,0.5357,0.5714
+S07,will i have to pay for the parking that i will use,will i have to play for the partner that i will use now,0.18,0.25
+S09,will i have to pay for the parking that i will use,will the spot for the parking that i will use be free,0.34,0.5
+S08,will i have to pay for the parking that i will use,will i have to pay for parking that i will use,0.08,0.0833
+S07,will she have a car by next year,will she have a cat by next year,0.0312,0.125
+S09,will she have a car by next year,will she have a car by next year,0,0
+S08,will she have a car by next year,will she have a bar by next year,0.0312,0.125
+S07,will the animals not find food in the forest,will the animals at find food in the forest,0.0455,0.1111
+S09,will the animals not find food in the forest,will the animals not find food in the forest,0,0
+S08,will the animals not find food in the forest,will the new main not find apples in the forest,0.2727,0.3333
+S07,will the fish swim upstream next month,will the fish swim upstream next month,0,0
+S09,will the fish swim upstream next month,will the women's team win next month,0.4211,0.4286
+S08,will the fish swim upstream next month,will the new movie stream next month,0.2632,0.4286
+S07,will the forecast be accurate this time,will the forecast be accurate this time,0,0
+S09,will the forecast be accurate this time,will the forecast be accurate tomorrow,0.2051,0.2857
+S08,will the forecast be accurate this time,will the forecast be accurate today,0.2051,0.2857
+S07,will the kids playing outside be hungry soon,will the kids playing outside be hungry soon,0,0
+S09,will the kids playing outside be hungry soon,will the kid playing outside be hungry soon,0.0227,0.125
+S08,will the kids playing outside be hungry soon,will the kids playing outside be hungry soon,0,0
+S07,will the poem that i write not be very short,will the poem that i wrote not be very helpful,0.1818,0.2
+S09,will the poem that i write not be very short,will the people that i love not be harmed,0.3864,0.4
+S08,will the poem that i write not be very short,will the picture that i took not be very clear,0.3636,0.3
+S07,will the robot that i built not be able to walk,will the robot that i built not be able to walk tomorrow,0.1915,0.0909
+S09,will the robot that i built not be able to walk,will the robot that i built not be able to walk,0,0
+S08,will the robot that i built not be able to walk,will the robot that i built not be able to walk,0,0
+S07,will the sun rise early in june,will the sun rise early in the morning,0.3226,0.2857
+S09,will the sun rise early in june,will the sun rise early on monday,0.1935,0.2857
+S08,will the sun rise early in june,will the sun rise early tomorrow,0.2581,0.2857
+S07,will the teams that are training together win the league,will the teams that are training together win the race,0.0714,0.1
+S09,will the teams that are training together win the league,will the teams that are training harder be winning,0.3214,0.4
+S08,will the teams that are training together win the league,will the teams that train together win,0.3214,0.4
+S07,will they be riding their scooters to school tomorrow,will they be taking their computers to school tomorrow,0.1321,0.2222
+S09,will they be riding their scooters to school tomorrow,will they be riding their bikes to school tomorrow,0.1132,0.1111
+S08,will they be riding their scooters to school tomorrow,will they be taking the bus to school tomorrow,0.2264,0.3333
+S07,will they not attend the party tonight,will they not attend the party tonight,0,0
+S09,will they not attend the party tonight,will they not attend the party tonight,0,0
+S08,will they not attend the party tonight,will they not attend the party tonight,0,0
+S07,will trees next to the lake be cut down,will trees next to the river be cut down,0.1026,0.1111
+S09,will trees next to the lake be cut down,will trees next to the house be cut down,0.1026,0.1111
+S08,will trees next to the lake be cut down,will they react to this news with sadness,0.5897,0.7778
+S07,you were very kind to my sister,they were very kind to my sister,0.129,0.1429
+S09,you were very kind to my sister,you were very kind to my sister,0,0
+S08,you were very kind to my sister,i was very close to my sister,0.3548,0.4286
