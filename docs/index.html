@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) Meta Platforms, Inc. and affiliates.
+All rights reserved.
+
+This source code is licensed under the license found in the
+LICENSE file in the root directory of this source tree.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brain2Qwerty — Typing, decoded from the brain (video hero, zoomed start)</title>
+  <meta name="description" content="A non-invasive brain-computer interface that decodes typed sentences from magnetoencephalography (MEG). Work by Meta AI in collaboration with BCBL." />
+  <link rel="stylesheet" href="./src/demo-v2.css?v=28" />
+  <!-- Video hero: no WebGL / Three.js. The 3D scene is pre-rendered to two
+       clips (assets/hero-video/) baked by tools/capture-hero.mjs; src/hero-video.js
+       scrubs the zoom clip on scroll and loops the activation clip. -->
+</head>
+<body data-hero-start="brain">
+
+  <!-- ===================== TOP BAR ===================== -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <span class="brand"><span class="brand-full">Brain2Qwerty: a non-invasive brain-computer interface</span><span class="brand-short">Brain2Qwerty</span></span>
+      <nav class="topnav">
+        <a href="https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/" class="hide-sm" target="_blank" rel="noopener">Blog</a>
+        <a href="https://www.nature.com/articles/s41593-026-02303-2" data-link="paper-v1" target="_blank" rel="noopener">Paper v1</a>
+        <a href="https://ai.meta.com/research/publications/accurate-decoding-of-natural-sentences-from-non-invasive-brain-recordings/" data-link="paper-v2" target="_blank" rel="noopener">Paper v2</a>
+        <a href="https://github.com/facebookresearch/brain2qwerty" data-link="code" target="_blank" rel="noopener">Code</a>
+        <a href="https://huggingface.co/datasets/bcbl190626/SpanishBCBL" data-link="data" target="_blank" rel="noopener" class="hide-sm">Data</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== HERO (scroll-scrubbed 3D) =====================
+       Minimal hero: title + subtitle pinned over the two-state 3D zoom
+       (MEG-first here), with the prediction GIF and the cortical-activity timer
+       on the brain close-up. All narrative prose lives in the article below. -->
+  <section class="hero" id="top">
+    <div class="hero-sticky">
+      <div id="hero-stage" class="hero-stage">
+        <div id="hero-loading" class="hero-loading">Loading the scanner…</div>
+      </div>
+      <div class="hero-overlay">
+        <h1 class="hero-title"><span class="hl-brain">Brain</span><span class="two">2</span><span class="hl-qwerty">Qwerty</span><span class="ver">v2</span></h1>
+        <p class="hero-sub">A non-invasive brain-computer interface for online sentence generation.</p>
+      </div>
+      <div class="hero-kbd" id="hero-kbd" aria-hidden="true">
+        <video src="./assets/images/prediction_animation_keyboard.mp4" autoplay loop muted playsinline aria-label="Animation: keys lighting up on a QWERTY keyboard as characters are decoded"></video>
+      </div>
+      <div class="hero-anim" id="hero-anim" aria-hidden="true">
+        <video src="./assets/images/prediction_animation_sentence.mp4" autoplay loop muted playsinline aria-label="Animation: a sentence decoded from brain activity"></video>
+      </div>
+      <button class="scroll-hint hero-next" id="scroll-hint" type="button" aria-label="Scroll to read more">
+        <span>Scroll to read more</span>
+        <span class="scroll-arrow"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ===================== PROBLEM ===================== -->
+  <section id="problem" class="section" data-reveal>
+    <div class="wrap">
+      <p class="eyebrow eyebrow--spaced">The Challenge</p>
+      <!-- <h2>When the brain can no longer reach the world</h2> -->
+      <p>Every year, thousands of people lose the ability to speak after a stroke, an accident, or a brain disorder. While communication can be restored with <a href="https://www.nature.com/articles/s41586-023-06377-x" target="_blank" rel="noopener">brain implants</a> on the motor cortex, such <a href="https://www.nature.com/articles/s41583-024-00819-9" target="_blank" rel="noopener">neuroprostheses</a> require open-brain surgery.</p>
+      <p>Today, we introduce <strong>Brain2Qwerty v2</strong>: a model to decode natural sentences from non-invasive magnetoencephalography (MEG) recordings.</p>
+    </div>
+
+    <!-- <figure class="diagram" data-slot="pipeline"> -->
+      <!-- <img src="./assets/images/brain2qwerty_simple.svg" alt="Brain2Qwerty schematic: brain activity recorded with MEG or EEG feeds an AI decoder that outputs the QWERTY keys being typed" /> -->
+      <!-- <figcaption>Brain2Qwerty in one picture: brain activity &rarr; an AI decoder &rarr; the sentence being typed.</figcaption> -->
+    <!-- </figure> -->
+  </section>
+
+  <!-- ===================== ARCHITECTURE ===================== -->
+  <section id="architecture" class="section" data-reveal>
+    <div class="wrap">
+      <p class="eyebrow">Architecture</p>
+
+      <!-- <h2>How the model reads the brain</h2> -->
+      <p>For this, we built off the Brain2Qwerty v1 architecture released <a href="https://ai.meta.com/blog/brain-ai-research-human-communication/" target="_blank" rel="noopener">last year</a> and recently accepted at <a href="https://www.nature.com/articles/s41593-026-02303-2" data-link="paper-v1" target="_blank" rel="noopener"><em>Nature Neuroscience</em></a>. Brain2Qwerty v1 consisted of predicting keystrokes from MEG brain activity patterns recorded at <a href="https://www.bcbl.eu/en" target="_blank" rel="noopener">BCBL</a>, but could not work in real time because it needed the timing of every keypress.</p>
+
+      <p>Brain2Qwerty v2 overcomes this limit and generates the sentences directly from a continuous recording of brain activity.
+
+      This new model now combines three hierarchical modules to jointly improve the decoding of letters, words, and sentences.</p>
+      
+      <figure class="diagram diagram-arch">
+        <img class="anim-on-view" data-anim-src="./assets/images/arch_simple.gif?v=4" alt="MEG signal feeds a Conformer (character detection), then an Aligner (word embeddings), then an LLM that reconstructs the sentence: the robot moves very fast." />
+        <noscript><img src="./assets/images/arch_simple.gif?v=4" alt="MEG signal to Conformer to Aligner to LLM to predicted sentence." /></noscript>
+        <!-- <figcaption>The <strong>Conformer</strong> detects characters, the <strong>Aligner</strong> groups them into word embeddings, and the <strong>language model</strong> reconstructs the final <strong>sentence</strong>.</figcaption> -->
+      </figure>
+
+
+    </div>
+  </section>
+
+  <!-- ===================== PERFORMANCE ===================== -->
+  <section id="performance" class="section" data-reveal>
+    <div class="wrap">
+      <p class="eyebrow">Performance</p>
+      <!-- <h2>From a first proof to something usable</h2> -->
+      <p>Trained on <strong>10&times; more data</strong> per participant, Brain2Qwerty v2 can decode complete and meaningful sentences solely from MEG signals of healthy volunteers, and reaches up to <strong>78% word accuracy</strong> for the best participant.</p>
+
+      <!-- <div class="figures">
+        <div class="figure">
+          <div class="figure-num">32<span>%</span></div>
+          <div class="figure-label">average character error rate with MEG (v1)</div>
+        </div>
+        <div class="figure">
+          <div class="figure-num">19<span>%</span></div>
+          <div class="figure-label">best participant — whole sentences decoded verbatim</div>
+        </div>
+        <div class="figure">
+          <div class="figure-num">2<span>×</span></div>
+          <div class="figure-label">better than scalp EEG (67% error)</div>
+        </div>
+      </div> -->
+
+      <!-- Combined v1/v2 visual: three charts (training | character accuracy |
+           word accuracy). The accuracy charts stack mean + best participant per
+           model. v1 = grays, v2 = blues throughout. -->
+      <figure class="combo">
+
+        <div class="combo-cell combo-c chart">
+          <figcaption class="chart-title">Typed sentences</figcaption>
+          <p class="chart-sub">&nbsp;</p>
+          <div class="bars">
+            <div class="bar-col">
+              <span class="bar-track"><span class="bar" style="height:10%;--len:10%"><span class="bar-val">~2,200</span></span></span>
+              <span class="bar-label">v1</span>
+            </div>
+            <div class="bar-col">
+              <span class="bar-track"><span class="bar is-hi" style="height:100%;--len:100%"><span class="bar-val">~22,000</span></span></span>
+              <span class="bar-label">v2</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="combo-cell combo-e chart">
+          <figcaption class="chart-title">Word accuracy</figcaption>
+          <p class="chart-sub">&nbsp;</p>
+          <div class="bars">
+            <div class="bar-col">
+              <span class="bar-track"><span class="bar stack" style="height:61.5%;--len:61.5%"><span class="val-best">48%</span><span class="bar-mean" style="height:83.3%;--len:83.3%"><span class="val-mean">40%</span></span></span></span>
+              <span class="bar-label">v1</span>
+            </div>
+            <div class="bar-col">
+              <span class="bar-track"><span class="bar stack is-good" style="height:100%;--len:100%"><span class="val-best">78%</span><span class="bar-mean" style="height:78.2%;--len:78.2%"><span class="val-mean">61%</span></span></span></span>
+              <span class="bar-label">v2</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="combo-legend2">
+          <span class="lkey"><span class="sw mean"></span>mean</span>
+          <span class="lkey"><span class="sw best"></span>best participant</span>
+        </div>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- ===================== EXPLORE DECODED SENTENCES ===================== -->
+  <section id="explore" class="section" data-reveal>
+    <div class="wrap">
+      <p class="eyebrow">Explore results</p>
+      <p>Explore examples of the sentences decoded by Brain2Qwerty v2 from the brain recordings of three subjects.</p>
+    </div>
+
+    <figure class="diagram">
+      <!-- Interactive: per sentence, the three best subjects (highest accuracy). -->
+      <div id="results-explorer"></div>
+    </figure>
+  </section>
+
+  <!-- ===================== OPEN SCIENCE / WHAT'S NEXT ===================== -->
+  <section id="future" class="section" data-reveal>
+    <div class="wrap">
+      <p class="eyebrow">Remaining challenges</p>
+      <p>Two major challenges remain before this method can be hoped to transfer to the clinic. First, decoding performance is not yet good enough for everyday use: this method still makes too many word-level or character-level errors to be practical. Still, our results follow a <strong>scaling law</strong>: the more data used for training, the better the decoder, without -- at least for now -- a detectable performance plateau. We are hopeful that larger datasets will thus further improve decoding and reduce the remaining gap with invasive neuroprostheses.</p>
+      <p>Second, the MEG device used in the presented study consists of a large <a href="https://megin.com/" target="_blank" rel="noopener">scanner</a> -- i.e. a setup inaccessible to most patients. However, we are optimistic about this challenge: MEG sensors continue to improve, and some are now <a href="https://www.nature.com/articles/nature26147" target="_blank" rel="noopener">wearable</a>, and could thus be more practical in the clinics.</p>
+
+      <p class="eyebrow eyebrow--spaced">Open Science</p>
+      <p>As always, we're thrilled to share our publications, code and data:</p>
+
+      <div class="reslinks">
+        <a class="reslink" href="https://www.nature.com/articles/s41593-026-02303-2" data-link="paper-v1" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M8.5 13h7M8.5 17h7"/></svg>
+          <span><strong>Brain2Qwerty v1</strong> <span class="sub">Nature Neuroscience</span></span>
+        </a>
+        <a class="reslink" href="https://ai.meta.com/research/publications/accurate-decoding-of-natural-sentences-from-non-invasive-brain-recordings/" data-link="paper-v2" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M8.5 13h7M8.5 17h7"/></svg>
+          <span><strong>Brain2Qwerty v2</strong> <span class="sub">Meta preprint</span></span>
+        </a>
+        <a class="reslink" href="https://github.com/facebookresearch/brain2qwerty" data-link="code" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+          <span><strong>Full Code for v1 and v2</strong> <span class="sub">GitHub</span></span>
+        </a>
+        <a class="reslink" href="https://huggingface.co/datasets/bcbl190626/SpanishBCBL" data-link="data" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7"/><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M8 11v4M16 11v4M12 13v4"/></svg>
+          <span><strong>v1 Dataset collected by BCBL</strong> <span class="sub">HuggingFace</span></span>
+        </a>
+        <a class="reslink" href="#" data-link="data" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7"/><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M8 11v4M16 11v4M12 13v4"/></svg>
+          <span><strong>v2 Dataset collected by BCBL</strong> <span class="sub">embargoed until journal publication.</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="./src/hero-video.js"></script>
+  <script type="module" src="./src/demo.js?v=2"></script>
+  <script type="module" src="./src/results-explorer.js"></script>
+</body>
+</html>

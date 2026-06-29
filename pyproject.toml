@@ -1,0 +1,114 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+# All rights reserved.
+#
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+
+[project]
+name = "brain2qwerty"
+version = "2.0.0"
+description = "Brain2Qwerty: decoding typed sentences from non-invasive brain activity (V1 keystroke Conv+Transformer; V2 CTC + contrastive + LLM)."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.12"
+authors = [
+    { name = "Jarod Levy" },
+    { name = "Mingfang (Lucy) Zhang" },
+    { name = "Svetlana Pinet" },
+    { name = "Jeremy Rapin" },
+    { name = "Hubert Banville" },
+    { name = "Stephane d'Ascoli" },
+    { name = "Jean-Remi King" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+# Pins are exact on purpose: the project's stated goal is to reproduce the
+# published numbers, so every version that can influence numerics is frozen
+# to the environment the results were produced in.
+dependencies = [
+    # Lab packages (public PyPI)
+    "neuralset==0.2.2",
+    "neuraltrain==0.2.2",
+    "neuralfetch==0.2.2",
+    "exca==0.5.22",
+    "submitit==1.5.3",
+    # Deep learning core
+    "torch==2.6.0",
+    "torchaudio==2.6.0",
+    "torchvision==0.21.0",
+    "lightning==2.5.2",
+    "torchmetrics==1.7.3",
+    "x-transformers==2.4.9",
+    # V2 LLM stack
+    "transformers==4.52.4",
+    "peft==0.18.1",
+    # Scientific / data
+    "numpy==2.2.6",
+    "pandas==2.2.3",
+    "scipy==1.14.1",
+    "scikit-learn==1.8.0",
+    "pydantic==2.12.5",
+    "regex==2024.11.6",
+    "tqdm==4.67.1",
+    "pyyaml==6.0.2",
+    # Neuro I/O (used by the study definitions / data onboarding)
+    "mne==1.11.0",
+    "dtw-python==1.7.4",
+    # Metrics / text
+    "edit_distance==1.0.7",
+    "Levenshtein==0.27.1",
+    "g2p_en==2.1.0",
+    # Logging
+    "wandb==0.26.1",
+]
+
+[project.optional-dependencies]
+viz = [
+    "matplotlib==3.10.3",
+    "seaborn==0.12.2",
+]
+# Optional N-gram decoding post-processing (scripts/ngram_decoding.py).
+lm = [
+    "kenlm==0.2.0",
+]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.4",
+]
+
+[project.urls]
+Source = "https://github.com/facebookresearch/brain2qwerty"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["brain2qwerty_v1*", "brain2qwerty_v2*", "studies*"]
+
+[tool.ruff]
+line-length = 90
+target-version = "py310"
+exclude = [".venv-release"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["brain2qwerty_v1", "brain2qwerty_v2", "studies", "neuralset", "neuraltrain", "neuralfetch"]
+
+# Keep the pre-commit isort hook consistent with ruff's import sorting.
+[tool.isort]
+profile = "black"
+line_length = 90
+known_first_party = ["brain2qwerty_v1", "brain2qwerty_v2", "studies", "neuralset", "neuraltrain", "neuralfetch"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
