@@ -31,7 +31,7 @@ class EnglishBCBLPreprocessing(EventsTransform):
 
     def _run(self, events: pd.DataFrame) -> pd.DataFrame:
         # drop the four practice trials of each session
-        events = events[~events.trial_id.isin([0, 1, 2, 3])]
+        events = events[~events.trial_id.isin([0, 1, 2, 3])].copy()
         events["sentence_UID"] = (
             events["trial_id"].astype(str) + "_" + events["timeline"].astype(str)
         )
