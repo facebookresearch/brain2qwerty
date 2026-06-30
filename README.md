@@ -37,7 +37,7 @@ The code is released under [CC BY-NC 4.0](LICENSE).
 
 ## Data
 - Brain2Qwerty v1: https://huggingface.co/datasets/bcbl190626/SpanishBCBL
-- Brain2Qwerty v2: under embargo until the paper acceptation.
+- Brain2Qwerty v2: under embargo until the paper acceptance.
 
 The datasets are collected by and belong to the [BCBL — Basque Center on Cognition, Brain and Language](https://www.bcbl.eu/).
 
