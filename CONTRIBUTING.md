@@ -20,7 +20,7 @@ We actively welcome your pull requests.
 3. If you've added code that should be tested, add tests.
 4. If you've changed APIs, update the docstrings and the README.
 5. Ensure the test suite passes: `pytest`.
-6. Make sure your code lints: `ruff check brain2qwerty/` and `ruff format --check brain2qwerty/`.
+6. Make sure your code lints: `ruff check brain2qwerty_v1/ brain2qwerty_v2/ studies/` and `ruff format --check brain2qwerty_v1/ brain2qwerty_v2/ studies/`.
 7. If you haven't already, complete the Contributor License Agreement ("CLA").
 
 ## Contributor License Agreement ("CLA")
